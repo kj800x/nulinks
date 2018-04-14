@@ -1,0 +1,1 @@
+__CHROME_EXTENSION__ = true;

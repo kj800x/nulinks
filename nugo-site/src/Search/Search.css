@@ -1,0 +1,20 @@
+.searchControl:placeholder-shown {
+  color: #cbd6e2;
+}
+
+.searchControl {
+  padding: 0.5625rem 1.25rem;
+  border-radius: 0.1875rem;
+  box-shadow: inset 0 0 0 0.5px #7c98b6;
+  font-size: 1rem;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  background-color: #f9fbfd;
+  border: 0 #7c98b6;
+  display: block;
+  line-height: 1.375rem;
+  vertical-align: middle;
+  width: 100%;
+  margin: 0;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+}

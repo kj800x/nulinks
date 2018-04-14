@@ -1,0 +1,68 @@
+.result.selected {
+  background: rgba(0,136,204,0.80) !important;
+}
+
+.result.selected, .result.selected .resultTitle, .result.selected .resultGoLink, .result.selected .resultDescription {
+  color: white !important;
+  transition: none;
+}
+
+.resultContents {
+  display: block;
+  position: relative;
+  height: 69px;
+  border-bottom: 1px solid #eee;
+}
+
+.result, .result .resultTitle, .result .resultGoLink, .result .resultDescription  {
+  transition: all .15s ease-in-out;
+}
+
+.result .resultContents > * {
+  position: absolute;
+}
+
+.resultHeader {
+  top: 10px;
+  font-size: 20px;
+  line-height: 30px;
+  left: 0;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.resultTitle {
+  color: #00a4bd;
+  background-color: transparent;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.resultGoLink {
+  float: right;
+  font-size: 14px;
+  font-style: italic;
+  color: #888;
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+.resultDescription {
+  top: 39px;
+  color: rgba(0,0,0,0.50);
+  left: 0;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+}

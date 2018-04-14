@@ -1,18 +1,24 @@
 {
-  "name": "site",
-  "version": "0.1.0",
+  "name": "nugo-site",
+  "version": "0.0.1",
   "private": true,
-  "dependencies": {
-    "nugo-common": "file:../nugo-common",
-    "react": "^16.3.1",
-    "react-dom": "^16.3.1",
-    "react-scripts": "1.1.4"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kj800x/nugo.git"
   },
+  "author": "Kevin Johnson",
+  "license": "MIT",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "nugo-common": "file:../nugo-common",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-scripts": "1.1.4"
   },
   "homepage": "."
 }

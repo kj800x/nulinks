@@ -1,0 +1,25 @@
+.zeroState {
+  padding: 10px;
+  text-align: center;
+}
+
+.searchingIllustration {
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+.ctas {
+  margin-top: 30px
+}
+
+.button {
+  background-color:#cc0000;
+  border:1px solid #660000;
+  border-radius:5px;
+  color:#fff;
+  margin:30px 10px;
+  padding:10px 10px 10px 10px;
+  text-decoration: none;
+  font-weight: bold;
+}

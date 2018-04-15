@@ -5,6 +5,7 @@ import Search from "../Search/Search";
 import Results from "../Results/Results";
 import { nugo_data } from 'nugo-common/data';
 import { searchText } from 'nugo-common/searchText';
+import Footer from "../Footer/Footer";
 
 class App extends Component {
   constructor(props) {
@@ -53,6 +54,7 @@ class App extends Component {
             <Search value={this.state.searchValue} onChange={this.handleSearchChange} onSelectedResultChange={this.handleSelectedResultChange} onGo={this.handleGo}/>
             <Results results={this.state.searchResults} selectedResult={this.state.selectedResult}/>
           </div>
+          <Footer />
         </section>
       </div>
     );

@@ -37,10 +37,16 @@ const nugo_data = [
     "target": "https://neu.biginterview.com/"
   },
   {
-    "keywords": ["nucareers", "coop", "co-op", "nucarreers"],
+    "keywords": ["nucareers", "coop-search", "co-op-search", "nucarreers"],
     "title": "NUCareers",
     "target": "https://nucareers.northeastern.edu/Shibboleth.sso/Login?target=https://nucareers.northeastern.edu/secure/neuLogin.htm?action=login",
     "description": "Northeastern University's database of career and cooperative education job opportunities"
+  },
+  {
+    "keywords": ["coop", "co-op", "co-op-reflect", "co-op-self-assessment"],
+    "title": "Co-op Self Assessment Site",
+    "target": "https://coopstatus.neu.edu/reflection/student/",
+    "description": "Northeastern University's student self assessment site for co-op"
   },
   {
     "keywords": ["commencement-apply"],

@@ -4,11 +4,12 @@
   "private": true,
   "description": "Quick links to Northeastern University sites for students!",
   "scripts": {
-    "build": "cd nugo-site && npm run build && cd .. && rm -rf nugo-extension/pages/* && cp -r nugo-site/build/* nugo-extension/pages"
+    "build": "bash .bin/build.sh",
+    "install": "bash .bin/install.sh"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/kj800x/nugo.git"
+    "type": "git",
+    "url": "https://github.com/kj800x/nugo.git"
   },
   "author": "Kevin Johnson",
   "license": "MIT"

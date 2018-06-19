@@ -7,7 +7,7 @@ cd ..
 
 # Save the CWD
 pushd . > /dev/null
-cd $(dirname $0)
+cd $(dirname $0)/..
 
 # Clean up any files that are currently in our workspace
 rm -rf /tmp/nugo/*
@@ -30,6 +30,12 @@ mkdir -p /tmp/nugo/nugo-extension/pages
 cp -Rp nugo-site/build/* /tmp/nugo/nugo-extension/pages
 # Remove site's manifest
 rm /tmp/nugo/nugo-extension/pages/manifest.json
+
+# Remove other extra files
+rm /tmp/nugo/nugo-extension/nugo-common/package.json
+rm /tmp/nugo/nugo-extension/nugo-common/package-lock.json
+rm -rf /tmp/nugo/nugo-extension/nugo-common/node_modules
+rm -rf /tmp/nugo/nugo-extension/nugo-common/test
 
 # Build the zip file
 cd /tmp/nugo

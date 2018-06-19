@@ -27,7 +27,6 @@
   font-size: 20px;
   line-height: 30px;
   left: 0;
-  display: inline-block;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -35,6 +34,8 @@
   max-width: 100%;
   box-sizing: border-box;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .resultTitle {
@@ -46,7 +47,7 @@
 }
 
 .resultGoLink {
-  float: right;
+  margin-left: 5px;
   font-size: 14px;
   font-style: italic;
   color: #888;

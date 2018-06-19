@@ -23,3 +23,7 @@
   text-decoration: none;
   font-weight: bold;
 }
+
+.button:hover {
+  background-color: #e24444;
+}

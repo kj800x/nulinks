@@ -5,12 +5,16 @@
   "description": "Quick links to Northeastern University sites for students!",
   "scripts": {
     "build": "bash .bin/build.sh",
-    "install": "bash .bin/install.sh"
+    "install": "bash .bin/install.sh",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/kj800x/nugo.git"
   },
   "author": "Kevin Johnson",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^23.1.0"
+  }
 }

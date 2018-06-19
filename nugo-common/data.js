@@ -25,11 +25,11 @@ const nugo_data = [
     "description": "Gain access to course materials online, transfer files, and interact with your instructor and other students"
   },
   {
-    "keywords": ["register", "reg"],
+    "keywords": ["register", "register", "register", "register"],
     "title": "Class Registration",
     "target": "https://nubanner.neu.edu/StudentRegistrationSsb/ssb/registration",
     "description": "Register for classes at Northeastern",
-    "tuning": 1
+    "tuning": 100
   },
   {
     "keywords": ["big-interview"],
@@ -43,7 +43,7 @@ const nugo_data = [
     "description": "Northeastern University's database of career and cooperative education job opportunities"
   },
   {
-    "keywords": ["coop", "co-op", "co-op-reflect", "co-op-self-assessment"],
+    "keywords": ["coop", "co-op", "reflect", "self-assessment"],
     "title": "Co-op Self Assessment Site",
     "target": "https://coopstatus.neu.edu/reflection/student/",
     "description": "Northeastern University's student self assessment site for co-op"
@@ -66,7 +66,7 @@ const nugo_data = [
     "target": "https://nudining.com/"
   },
   {
-    "keywords": ["dining-hours"],
+    "keywords": ["dining-hours", "hours"],
     "title": "NU Dining Hours",
     "target": "https://nudining.com/hours"
   },
@@ -137,17 +137,17 @@ const nugo_data = [
     "target": "https://northeastern.secure.force.com/public/apex/ITSGEOCourseApprovalEntry"
   },
   {
-    "keywords": ["co-op-connections", "coop-connections"],
+    "keywords": ["coop-connections", "co-op-connections"],
     "title": "Co-op Connections",
     "target": "http://www.northeastern.edu/coopconnections/"
   },
   {
-    "keywords": ["housing-share"],
+    "keywords": ["housing-share", "coop-housing-share", "co-op-housing-share"],
     "title": "Co-op Housing Share",
     "target": "https://aptsearch.northeastern.edu/"
   },
   {
-    "keywords": ["ride-share"],
+    "keywords": ["ride-share", "coop-ride-share", "co-op-ride-share"],
     "title": "Co-op Ride Share",
     "target": "https://prod-web.neu.edu/wasapp/RideShare/secure/index.jsp"
   },
@@ -272,7 +272,7 @@ const nugo_data = [
     "description": "Request either an official enrollment verification for a term(s), or a degree verification, both of which can be given to a third party"
   },
   {
-    "keywords": ["i-am-here","iamhere","soy-aqui"],
+    "keywords": ["i-am-here", "iamhere", "soy-aqui"],
     "title": "I Am Here",
     "target": "https://prod-web.neu.edu/wasapp/bn/iah/secure/iah/main.do",
     "description": "Complete \"I Am Here\" process to verify that you are attending classes"
@@ -425,7 +425,7 @@ const nugo_data = [
     "description": "To get involved, purchase a yearbook, register for a senior portrait session, publicize your student group, advertise your local business, or find out more about the Cauldron Yearbook, check out www.cauldron.neu.edu! The Cauldron is committed to high quality annual yearbooks and has been proudly representing Northeastern University since 1922"
   },
   {
-    "keywords": ["trace", "mytrace"],
+    "keywords": ["trace", "mytrace", "trace"],
     "title": "myTRACE - Teacher Rating and Course Evaluation",
     "target": "https://www.applyweb.com/eval/shibboleth/neu/36892",
     "description": "Access your complete course survey results online"
@@ -468,7 +468,7 @@ const nugo_data = [
     "target": "https://www.northeastern.edu/uhcs/"
   },
   {
-    "keywords": ["mail", "husky-mail", "gmail"],
+    "keywords": ["mail", "husky-mail", "gmail", "mail", "mail"],
     "title": "Husky Mail",
     "target": "http://mail.google.com/a/husky.neu.edu",
     "description": "Husky Mail is your University-provided email"
@@ -478,6 +478,18 @@ const nugo_data = [
     "title": "ResMail",
     "target": "http://www.northeastern.edu/mailservices/ResMail/ResMail.html",
     "description": "ResMail is the University Resident Mail Services"
+  },
+  {
+    "keywords": ["fafsa", "fasfa"],
+    "title": "FAFSA",
+    "target": "https://fafsa.ed.gov/",
+    "description": "Free Application for Federal Student Aid",
+  },
+  {
+    "keywords": ["aoun", "president"],
+    "title": "President Aoun",
+    "target": "https://twitter.com/presidentaoun",
+    "description": "Joseph E. Aoun"
   }
 ];
 

@@ -10,6 +10,7 @@ const expectFirst = (searchTerm, firstResultTitle) => {
 describe("searching data.js with searchText.js", () => {
   expectFirst("regis", "Class Registration");
   expectFirst("reg", "Class Registration");
+  expectFirst("class", "My Schedule");
   expectFirst("co-op", "Co-op Self Assessment Site");
   expectFirst("co-op-se", "NUCareers");
   expectFirst("nuca", "NUCareers");

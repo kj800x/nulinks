@@ -290,7 +290,7 @@ const nugo_data = [
     "description": "View your grades for all completed Northeastern classes"
   },
   {
-    "keywords": ["schedule", "my-schedule"],
+    "keywords": ["schedule", "class", "class", "class", "my-schedule"],
     "title": "My Schedule",
     "target": "https://nubanner.neu.edu/ssomanager/c/SSB?pkg=bwskfshd.P_CrseSchdDetl",
     "description": "View your schedule of classes by term"
@@ -490,6 +490,12 @@ const nugo_data = [
     "title": "President Aoun",
     "target": "https://twitter.com/presidentaoun",
     "description": "Joseph E. Aoun"
+  },
+  {
+    "keywords": ["nugo"],
+    "title": "NUgo (extension)",
+    "target": "https://chrome.google.com/webstore/detail/nugo/gfbdcgkehhkgfehdilpmldkeihiojjak",
+    "description": "The NUgo chrome extension"
   }
 ];
 

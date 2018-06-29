@@ -1,7 +1,7 @@
 {
   "name": "NUgo",
-  "version": "0.1.1",
-  "description": "Quick links to Northeastern University sites for students!",
+  "version": "0.1.2",
+  "description": "Never need to use MyNEU again!",
   "icons": {
     "16": "icons/16.png",
     "32": "icons/32.png",

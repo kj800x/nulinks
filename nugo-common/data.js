@@ -348,7 +348,7 @@ const nugo_data = [
     "description": "Establish or modify direct deposit for banking transactions such as refunds, payroll, and university reimbursements"
   },
   {
-    "keywords": ["nupay", "pay", "payment", "cashnet"],
+    "keywords": ["nupay", "pay", "payment", "cashnet", "bill"],
     "title": "Make a Payment with NUPay",
     "target": "https://prod-web.neu.edu/wasapp/cashnet/sso/secure/s/main.action",
     "description": "Pay tuition, pay a deposit, and other miscellaneous purchases"

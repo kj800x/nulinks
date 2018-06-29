@@ -22,7 +22,7 @@ describe("searching data.js with searchText.js", () => {
   expectFirst("faf", "FAFSA");
   expectFirst("hours", "NU Dining Hours");
   expectFirst("pay", "Make a Payment with NUPay");
+  expectFirst("bill", "Make a Payment with NUPay");
   expectFirst("work", "Student Employment (workstudy, timesheets)");
   expectFirst("work-re", "Facilities Online Work Request");
-  expectFirst("tra", "myTRACE - Teacher Rating and Course Evaluation");
 });

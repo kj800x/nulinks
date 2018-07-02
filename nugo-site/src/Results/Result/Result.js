@@ -4,7 +4,6 @@ import ReactDom from 'react-dom';
 import "./Result.css";
 
 export default class Result extends Component {
-
   componentDidUpdate() {
     if (this.props.selected) {
       ReactDom.findDOMNode(this).scrollIntoView({"behavior": "instant", "block": "nearest", "inline": "nearest"});

@@ -29,7 +29,7 @@ const nugo_data = [
     "title": "Class Registration",
     "target": "https://nubanner.neu.edu/StudentRegistrationSsb/ssb/registration",
     "description": "Register for classes at Northeastern",
-    "tuning": 100
+    "tuning": 99
   },
   {
     "keywords": ["big-interview"],

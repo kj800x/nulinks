@@ -7,63 +7,49 @@
   transition: none;
 }
 
-.resultContents {
-  display: block;
-  position: relative;
-  height: 69px;
-  border-bottom: 1px solid #eee;
-}
-
 .result, .result .resultTitle, .result .resultGoLink, .result .resultDescription  {
   transition: all .15s ease-in-out;
 }
 
-.result .resultContents > * {
-  position: absolute;
+.resultContents {
+  display: block;
+  border-bottom: 1px solid #d5d5d5;
+  padding: 5px 20px;
+  min-height: 64px;
 }
 
 .resultHeader {
-  top: 10px;
   font-size: 20px;
   line-height: 30px;
-  left: 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  padding: 0 20px;
   max-width: 100%;
-  box-sizing: border-box;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .resultTitle {
   color: #00a4bd;
-  background-color: transparent;
-  font-family: Lato, Helvetica, Arial, sans-serif;
   font-weight: 600;
   text-decoration: none;
 }
 
 .resultGoLink {
   margin-left: 5px;
+  margin-right: 2px;
   font-size: 14px;
   font-style: italic;
   color: #888;
-  line-height: 30px;
   white-space: nowrap;
 }
 
 .resultDescription {
-  top: 39px;
   color: rgba(0,0,0,0.50);
-  left: 0;
-  display: inline-block;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  padding: 0 20px;
   max-width: 100%;
   box-sizing: border-box;
 }

@@ -48,8 +48,9 @@
 .resultDescription {
   color: rgba(0,0,0,0.50);
   text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
   max-width: 100%;
   box-sizing: border-box;
+  line-height: 1.5em;        /* fallback */
+  height: 3em;       /* fallback */
 }

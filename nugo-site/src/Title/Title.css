@@ -1,12 +1,12 @@
 .title {
   border-radius: 0.5875rem 0.5875rem 0 0;
-  padding: 3rem;
+  padding: 1.5rem;
   text-align: center;
   background: linear-gradient(#CC0000, #610000);
 }
 
 .icon {
   border: 1px solid white;
-  height: 182px;
-  width: 182px;
+  height: 100px;
+  width: 100px;
 }

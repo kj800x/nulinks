@@ -66,7 +66,7 @@ const nugo_data = [
     "target": "https://nudining.com/"
   },
   {
-    "keywords": ["dining-hours", "hours"],
+    "keywords": ["dining-hours", "hours", "curry", "curry-hours"],
     "title": "NU Dining Hours",
     "target": "https://nudining.com/hours"
   },
@@ -398,7 +398,7 @@ const nugo_data = [
     "keywords": ["student-employee-self-service", "student-employment-taxes", "workstudy-taxes", "w2", "w-2", "w4", "w-4", "tax", "taxes", "benefits", "pay-information"],
     "title": "Student Employee Self-Service",
     "target": "https://nubanner.neu.edu/ssomanager/c/SSB?pkg=twbkwbis.P_GenMenu?name=pmenu.P_MainMnu",
-    "description": "Provides access to view pay statements for all pay periods beginning after 1/1/12. Also provides access to W-2 and W-4 information for changes beginning in calendar year 2012. Requests for information on previous years may be directed to the HRM Customer Service Center via email, HRMInfo@northeastern.edu"
+    "description": "Provides access to view pay statements for all pay periods beginning after 1/1/12. Also provides access to W-2 and W-4 information for changes beginning in calendar year 2012."
   },
   {
     "keywords": ["voter-registration"],

@@ -3,19 +3,19 @@ import './App.css';
 import Title from "../Title/Title";
 import Search from "../Search/Search";
 import Results from "../Results/Results";
-import { nugo_data } from 'nugo-common/data';
-import { searchText } from 'nugo-common/searchText';
+import { nulinks_data } from 'nulinks-common/data';
+import { searchText } from 'nulinks-common/searchText';
 import Footer from "../Footer/Footer";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    console.log(nugo_data);
+    console.log(nulink_data);
     console.log(searchText);
     this.state = {
       searchValue: "",
       selectedResult: null,
-      searchResults: searchText(nugo_data)(""),
+      searchResults: searchText(nulinks_data)(""),
     };
     this.handleSearchChange = this.handleSearchChange.bind(this);
     this.handleSelectedResultChange = this.handleSelectedResultChange.bind(this);
@@ -26,7 +26,7 @@ class App extends Component {
     this.setState({
       searchValue: value,
       selectedResult: (value === "" ? null : 0),
-      searchResults: searchText(nugo_data)(value),
+      searchResults: searchText(nulinks_data)(value),
     })
   }
 

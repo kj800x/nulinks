@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Build the site
-cd nugo-site
+cd nulinks-site
 npm run build
 cd ..
 
@@ -10,42 +10,42 @@ pushd . > /dev/null
 cd $(dirname $0)/..
 
 # Clean up any files that are currently in our workspace
-rm -rf /tmp/nugo/*
+rm -rf /tmp/nulinks/*
 
 # Set up the folder structure that we'll need
-mkdir -p /tmp/nugo/nugo-extension
+mkdir -p /tmp/nulinks/nulinks-extension
 
 # Copy extension files
-cp -Rp nugo-extension/* /tmp/nugo/nugo-extension
+cp -Rp nulinks-extension/* /tmp/nulinks/nulinks-extension
 
 # Copy common files
 # Remove the symbolic link
-rm /tmp/nugo/nugo-extension/nugo-common
+rm /tmp/nulinks/nulinks-extension/nulinks-common
 # Copy files
-mkdir -p /tmp/nugo/nugo-extension/nugo-common
-cp -Rp nugo-common/* /tmp/nugo/nugo-extension/nugo-common
+mkdir -p /tmp/nulinks/nulinks-extension/nulinks-common
+cp -Rp nulinks-common/* /tmp/nulinks/nulinks-extension/nulinks-common
 
 # Copy site build files
-mkdir -p /tmp/nugo/nugo-extension/pages
-cp -Rp nugo-site/build/* /tmp/nugo/nugo-extension/pages
+mkdir -p /tmp/nulinks/nulinks-extension/pages
+cp -Rp nulinks-site/build/* /tmp/nulinks/nulinks-extension/pages
 # Remove site's manifest
-rm /tmp/nugo/nugo-extension/pages/manifest.json
+rm /tmp/nulinks/nulinks-extension/pages/manifest.json
 
 # Remove other extra files
-rm /tmp/nugo/nugo-extension/nugo-common/package.json
-rm /tmp/nugo/nugo-extension/nugo-common/package-lock.json
-rm -rf /tmp/nugo/nugo-extension/nugo-common/node_modules
-rm -rf /tmp/nugo/nugo-extension/nugo-common/test
+rm /tmp/nulinks/nulinks-extension/nulinks-common/package.json
+rm /tmp/nulinks/nulinks-extension/nulinks-common/package-lock.json
+rm -rf /tmp/nulinks/nulinks-extension/nulinks-common/node_modules
+rm -rf /tmp/nulinks/nulinks-extension/nulinks-common/test
 
 # Build the zip file
-cd /tmp/nugo
-zip -r nugo-extension.zip nugo-extension
+cd /tmp/nulinks
+zip -r nulinks-extension.zip nulinks-extension
 
 # Restore the CWD
 popd > /dev/null
 
 # Copy the zip back here
-cp /tmp/nugo/nugo-extension.zip .
+cp /tmp/nulinks/nulinks-extension.zip .
 
 # Clean up
-rm -rf /tmp/nugo/*
+rm -rf /tmp/nulinks/*

@@ -1,5 +1,5 @@
 {
-  "name": "NUgo",
+  "name": "NULinks",
   "version": "0.1.5",
   "description": "Never need to use MyNEU again!",
   "icons": {
@@ -14,15 +14,15 @@
   "background": {
     "scripts": [
       "background/flagExtension.js",
-      "nugo-common/data.js",
-      "nugo-common/searchText.js",
+      "nulinks-common/data.js",
+      "nulinks-common/searchText.js",
       "background/registerHandlers.js"
     ],
     "persistent": false
   },
-  "omnibox": { "keyword" : "go" },
+  "omnibox": { "keyword" : "nu" },
   "browser_action": {
-    "default_title": "Open NUgo"
+    "default_title": "Open NULinks"
   },
   "manifest_version": 2
 }

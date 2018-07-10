@@ -1,9 +1,9 @@
-const { nugo_data } = require("../data");
+const { nulinks_data } = require("../data");
 const { searchText } = require("../searchText");
 
 const expectFirst = (searchTerm, firstResultTitle) => {
   it("works on " + searchTerm, () => {
-    expect(searchText(nugo_data)(searchTerm)[0].value.title).toEqual(firstResultTitle)
+    expect(searchText(nulinks_data)(searchTerm)[0].value.title).toEqual(firstResultTitle)
   });
 };
 

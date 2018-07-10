@@ -1,8 +1,8 @@
 {
-  "name": "nugo",
+  "name": "nulinks",
   "version": "0.0.1",
   "private": true,
-  "description": "Quick links to Northeastern University sites for students!",
+  "description": "Never need to use MyNEU again!",
   "scripts": {
     "build": "bash .bin/build.sh",
     "install": "bash .bin/install.sh",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kj800x/nugo.git"
+    "url": "https://github.com/kj800x/nulinks.git"
   },
   "author": "Kevin Johnson",
   "license": "MIT",

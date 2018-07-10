@@ -1,7 +1,7 @@
-cd nugo-site
+cd nulinks-site
 npm install
 cd ..
 
-cd nugo-common
+cd nulinks-common
 npm install
 cd ..

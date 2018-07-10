@@ -1,4 +1,4 @@
-const nugo_data = [
+const nulinks_data = [
   {
     "keywords": ["myneu", "mynortheastern", "m"],
     "title": "MyNortheastern",
@@ -492,15 +492,15 @@ const nugo_data = [
     "description": "Joseph E. Aoun"
   },
   {
-    "keywords": ["nugo"],
-    "title": "NUgo (extension)",
+    "keywords": ["nulinks"],
+    "title": "NULinks (extension)",
     "target": "https://chrome.google.com/webstore/detail/nugo/gfbdcgkehhkgfehdilpmldkeihiojjak",
-    "description": "The NUgo chrome extension"
+    "description": "The NULinks chrome extension"
   }
 ];
 
 if (typeof __CHROME_EXTENSION__ !== "undefined") {
   exports = {};
 }
-exports.nugo_data = nugo_data;
-exports.default = nugo_data;
+exports.nulinks_data = nulinks_data;
+exports.default = nulinks_data;

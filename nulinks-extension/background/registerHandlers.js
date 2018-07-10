@@ -1,8 +1,8 @@
 chrome.omnibox.onInputChanged.addListener((text, suggest) => {
-  const matches = searchText(nugo_data)(text);
+  const matches = searchText(nulinks_data)(text);
   console.log(matches);
   if (matches.length === 0) {
-    chrome.omnibox.setDefaultSuggestion({"description": "NUgo"})
+    chrome.omnibox.setDefaultSuggestion({"description": "NULinks"})
   }
   if (matches.length > 0) {
     chrome.omnibox.setDefaultSuggestion(toDefaultSuggestion(text, matches[0]))
@@ -13,7 +13,7 @@ chrome.omnibox.onInputChanged.addListener((text, suggest) => {
 });
 
 chrome.omnibox.onInputEntered.addListener(text => {
-  const matches = searchText(nugo_data)(text);
+  const matches = searchText(nulinks_data)(text);
   if (text === "" || matches.length === 0) {
     setTimeout(() => chrome.tabs.update(undefined, {url: chrome.extension.getURL("pages/index.html")}), 10);
     return;

@@ -1,10 +1,10 @@
 {
-  "name": "nugo-site",
+  "name": "nulinks-site",
   "version": "0.0.1",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/kj800x/nugo.git"
+    "url": "https://github.com/kj800x/nulinks.git"
   },
   "author": "Kevin Johnson",
   "license": "MIT",
@@ -15,7 +15,7 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "nugo-common": "file:../nugo-common",
+    "nulinks-common": "file:../nulinks-common",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-scripts": "1.1.4"

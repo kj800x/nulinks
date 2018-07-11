@@ -11,6 +11,7 @@ describe("searching data.js with searchText.js", () => {
   expectFirst("regis", "Class Registration");
   expectFirst("reg", "Class Registration");
   expectFirst("class", "My Schedule");
+  expectFirst("sched", "My Schedule");
   expectFirst("co-op", "Co-op Self Assessment Site");
   expectFirst("co-op-se", "NUCareers");
   expectFirst("nuca", "NUCareers");
@@ -24,6 +25,7 @@ describe("searching data.js with searchText.js", () => {
   expectFirst("hours", "NU Dining Hours");
   expectFirst("pay", "Make a Payment with NUPay");
   expectFirst("bill", "Make a Payment with NUPay");
+  expectFirst("bills", "Make a Payment with NUPay");
   expectFirst("work", "Student Employment (workstudy, timesheets)");
   expectFirst("work-re", "Facilities Online Work Request");
 });

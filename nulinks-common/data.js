@@ -257,7 +257,7 @@ const nulinks_data = [
     "keywords": ["register", "course-register"],
     "title": "Course Registration",
     "target": "https://nubanner.neu.edu/StudentRegistrationSsb",
-    "description": "View the list of courses offered at Northeastern"
+    "description": "Register for courses"
   },
   {
     "keywords": ["ice", "emergency-contact"],
@@ -272,10 +272,10 @@ const nulinks_data = [
     "description": "Request either an official enrollment verification for a term(s), or a degree verification, both of which can be given to a third party"
   },
   {
-    "keywords": ["i-am-here", "iamhere", "soy-aqui"],
+    "keywords": ["i-am-here", "iamhere", "estoy-aqui"],
     "title": "I Am Here",
     "target": "https://prod-web.neu.edu/wasapp/bn/iah/secure/iah/main.do",
-    "description": "Complete \"I Am Here\" process to verify that you are attending classes"
+    "description": "Complete the \"I Am Here\" process to verify that you are attending classes"
   },
   {
     "keywords": ["mypaws", "paws", "degree", "degree-audit"],
@@ -290,10 +290,16 @@ const nulinks_data = [
     "description": "View your grades for all completed Northeastern classes"
   },
   {
-    "keywords": ["schedule", "class", "class", "class", "my-schedule"],
+    "keywords": ["schedule", "schedule", "class", "class", "class", "my-schedule"],
     "title": "My Schedule",
     "target": "https://nubanner.neu.edu/ssomanager/c/SSB?pkg=bwskfshd.P_CrseSchdDetl",
     "description": "View your schedule of classes by term"
+  },
+  {
+    "keywords": ["searchneu", "searchnu", "search-classes"],
+    "title": "SearchNEU",
+    "target": "https://searchneu.com/",
+    "description": "Instantly search through all of NEU's classes. Search through classes, professors, sections, and subjects at Northeastern. Unofficial and run by students"
   },
   {
     "keywords": ["transcript", "my-transcript"],
@@ -306,6 +312,12 @@ const nulinks_data = [
     "title": "Registrar Forms",
     "target": "https://northeastern.secure.force.com/public/apex/ITSASCMainEntry",
     "description": "Complete various registration-related actions such as University Withdrawal, Leave of Absence, or Petition to Reduce Load"
+  },
+  {
+    "keywords": ["food-trucks", "foodtrucks", "food-truck-schedule"],
+    "title": "Boston Food Trucks",
+    "target": "https://www.boston.gov/departments/small-business-development/city-boston-food-trucks-schedule",
+    "description": "Schedule for Boston's food trucks. The location next to Speare Hall is \"Fenway-Kenmore\" > \"Opera Place (off Huntington Ave.)\""
   },
   {
     "keywords": ["schedule-of-classes"],
@@ -329,7 +341,7 @@ const nulinks_data = [
     "keywords": ["remoteapp"],
     "title": "Connect to RemoteApp",
     "target": "https://remoteapp.nunet.neu.edu/RDWeb/Pages/en-US/login.aspx",
-    "description": "The client should be preinstalled for most Windows operating systems. Go to the RemoteApp main page for further information. RemoteApp is a service that allows members of the university community to access computer applications remotely. Support for RemoteApp is available by calling the ITS Service Desk at 617.373.4357 (xHELP)\n"
+    "description": "The client should be preinstalled for most Windows operating systems. Go to the RemoteApp main page for further information. RemoteApp is a service that allows members of the university community to access computer applications remotely. Support for RemoteApp is available by calling the ITS Service Desk at 617.373.4357 (xHELP)"
   },
   {
     "keywords": ["housing", "housing-online"],
@@ -348,7 +360,7 @@ const nulinks_data = [
     "description": "Establish or modify direct deposit for banking transactions such as refunds, payroll, and university reimbursements"
   },
   {
-    "keywords": ["nupay", "pay", "payment", "cashnet", "bill"],
+    "keywords": ["nupay", "pay", "payment", "cashnet", "bills"],
     "title": "Make a Payment with NUPay",
     "target": "https://prod-web.neu.edu/wasapp/cashnet/sso/secure/s/main.action",
     "description": "Pay tuition, pay a deposit, and other miscellaneous purchases"
@@ -493,9 +505,9 @@ const nulinks_data = [
   },
   {
     "keywords": ["nulinks"],
-    "title": "NULinks (extension)",
-    "target": "https://chrome.google.com/webstore/detail/nugo/gfbdcgkehhkgfehdilpmldkeihiojjak",
-    "description": "The NULinks chrome extension"
+    "title": "NULinks",
+    "target": "https://chrome.google.com/webstore/detail/nulinks/gfbdcgkehhkgfehdilpmldkeihiojjak",
+    "description": "The NULinks chrome extension. Unofficial and run by students"
   }
 ];
 

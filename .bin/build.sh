@@ -48,4 +48,4 @@ popd > /dev/null
 cp /tmp/nulinks/nulinks-extension.zip .
 
 # Clean up
-rm -rf /tmp/nulinks/*
+#rm -rf /tmp/nulinks/*

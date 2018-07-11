@@ -10,7 +10,7 @@ import Footer from "../Footer/Footer";
 class App extends Component {
   constructor(props) {
     super(props);
-    console.log(nulink_data);
+    console.log(nulinks_data);
     console.log(searchText);
     this.state = {
       searchValue: "",

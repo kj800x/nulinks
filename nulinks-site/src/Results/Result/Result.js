@@ -19,7 +19,7 @@ export default class Result extends Component {
               {this.props.result.value.title}
             </a>
             <div className="resultGoLink">
-              go {this.props.result.representativeKeyword}
+              nu {this.props.result.representativeKeyword}
             </div>
           </div>
           <div className="resultDescription">

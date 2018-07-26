@@ -397,7 +397,7 @@ const nulinks_data = [
   {
     "keywords": ["waive-nushp", "nushp", "waive-health-plan"],
     "title": "Waive NUSHP (Health Plan)",
-    "target": "https://prod-web.neu.edu/wasapp/bn/HealthWaiver/initial.do",
+    "target": "https://www.gallagherstudent.com/northeastern",
     "description": "Complete the NUSHP waiver form if you have comparable health insurance coverage with an alternative domestic provider"
   },
   {

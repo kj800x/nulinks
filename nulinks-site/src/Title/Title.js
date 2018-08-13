@@ -5,6 +5,8 @@ import './Title.css';
 
 export default () => (
   <div className="title">
+    Hi
     <img className="icon" src={N} alt=""/> {/* <!-- Merriweather --> */}
+    Hi
   </div>
 )

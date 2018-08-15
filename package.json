@@ -15,6 +15,6 @@
   "author": "Kevin Johnson",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^23.1.0"
+    "jest": "^23.5.0"
   }
 }

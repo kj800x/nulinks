@@ -22,12 +22,23 @@ class App extends Component {
     this.handleGo = this.handleGo.bind(this);
   }
 
-  handleSearchChange(value) {
+  componentDidMount() {
+    const url = new URL(window.location);
+    if (url.searchParams.get("q")) {
+      this.handleSearchChange(url.searchParams.get("q"), () => {
+        if (url.searchParams.get("go") !== null) {
+          this.handleGo();
+        }
+      });
+    }
+  }
+
+  handleSearchChange(value, callback) {
     this.setState({
       searchValue: value,
       selectedResult: (value === "" ? null : 0),
       searchResults: searchText(nulinks_data)(value),
-    })
+    }, callback)
   }
 
   handleSelectedResultChange(delta) {
@@ -42,7 +53,9 @@ class App extends Component {
   }
 
   handleGo() {
-    window.location = this.state.searchResults[this.state.selectedResult].value.target;
+    if (null !== this.state.selectedResult) {
+      window.location = this.state.searchResults[this.state.selectedResult].value.target;
+    }
   }
 
   render() {

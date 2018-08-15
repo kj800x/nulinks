@@ -34,6 +34,7 @@ rm /tmp/nulinks/nulinks-extension/pages/manifest.json
 # Remove other extra files
 rm /tmp/nulinks/nulinks-extension/nulinks-common/package.json
 rm /tmp/nulinks/nulinks-extension/nulinks-common/package-lock.json
+rm /tmp/nulinks/nulinks-extension/nulinks-common/junit.xml
 rm -rf /tmp/nulinks/nulinks-extension/nulinks-common/node_modules
 rm -rf /tmp/nulinks/nulinks-extension/nulinks-common/test
 

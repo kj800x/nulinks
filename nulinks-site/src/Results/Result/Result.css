@@ -32,6 +32,12 @@
   overflow: hidden;
 }
 
+@media only screen and (max-width: 600px) {
+  .resultHeader {
+    font-size: 16px;
+  }
+}
+
 .resultTitle {
   color: #00a4bd;
   font-weight: 600;
@@ -55,4 +61,10 @@
   box-sizing: border-box;
   line-height: 1.5em;
   max-height: 3em;
+}
+
+@media only screen and (max-width: 600px) {
+  .resultDescription {
+    font-size: 12px;
+  }
 }

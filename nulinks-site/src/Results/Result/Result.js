@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import ReactDom from 'react-dom';
 
+import { A } from '../../util/A';
+
 import "./Result.css";
 
 export default class Result extends Component {
@@ -15,9 +17,9 @@ export default class Result extends Component {
       <li className={"result" + (this.props.selected ? " selected" : "")}>
         <div className="resultContents">
           <div className="resultHeader">
-            <a className="resultTitle" href={this.props.result.value.target}>
+            <A className="resultTitle" href={this.props.result.value.target}>
               {this.props.result.value.title}
-            </a>
+            </A>
             <div className="resultGoLink">
               nu {this.props.result.representativeKeyword}
             </div>

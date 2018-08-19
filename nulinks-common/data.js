@@ -508,6 +508,12 @@ const nulinks_data = [
     "title": "NULinks",
     "target": "https://chrome.google.com/webstore/detail/nulinks/gfbdcgkehhkgfehdilpmldkeihiojjak",
     "description": "The NULinks chrome extension. Unofficial and run by students"
+  },
+  {
+    "keywords": ["fp", "floor-plans", "floorplans", "housing-floor-plans"],
+    "title": "Residential Building Floor Plans",
+    "target": "https://www.northeastern.edu/housing/dnaesantoelrihtriseertn/",
+    "description": "Floor plans for Northeastern University Residential Buildings"
   }
 ];
 

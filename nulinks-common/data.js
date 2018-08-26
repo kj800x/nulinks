@@ -284,7 +284,7 @@ const nulinks_data = [
     "description": "View your requirements and progress to degree"
   },
   {
-    "keywords": ["grades", "my-grades"],
+    "keywords": ["grades", "my-grades", "gpa"],
     "title": "My Grades",
     "target": "https://nubanner.neu.edu/ssomanager/c/SSB?pkg=bwskogrd.P_ViewTermGrde",
     "description": "View your grades for all completed Northeastern classes"

@@ -71,6 +71,41 @@ const nulinks_data = [
     "target": "https://nudining.com/hours"
   },
   {
+    "keywords": ["nupd", "police"],
+    "title": "NUPD Website",
+    "target": "https://www.northeastern.edu/nupd"
+  },
+  {
+    "keywords": ["help", "emergency"],
+    "title": "Emergency? Call: 617-373-3333",
+    "target": "https://www.northeastern.edu/nupd/contact-information/"
+  },
+  {
+    "keywords": ["police-log", "crime-log"],
+    "title": "NUPD Crime Log",
+    "target": "https://www.huntnewsnu.com/category/campus/crime-logs/"
+  },
+  {
+    "keywords": ["news", "huntington-news"],
+    "title": "The Huntington News",
+    "target": "https://www.huntnewsnu.com/"
+  },
+  {
+    "keywords": ["git", "github"],
+    "title": "CCIS Github",
+    "target": "https://github.ccs.neu.edu/"
+  },
+  {
+    "keywords": ["calendar"],
+    "title": "Undergraduate Student Calendar",
+    "target": "https://registrar.northeastern.edu/app/uploads/2018-2019-GR-Expanded-Calendar-Grid.pdf"
+  },
+  {
+    "keywords": ["myccis", "ccis-profile-manager"],
+    "title": "MyCCIS: CCIS Profile Manager",
+    "target": "https://my.ccs.neu.edu"
+  },
+  {
     "keywords": ["work-request"],
     "title": "Facilities Online Work Request",
     "target": "https://workrequest.neu.edu/FAWorkRequestForm.aspx"

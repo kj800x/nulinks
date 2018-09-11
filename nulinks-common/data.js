@@ -527,6 +527,12 @@ const nulinks_data = [
     "description": "ResMail is the University Resident Mail Services"
   },
   {
+    "keywords": ["ereslife", "erezlife", "ezrezlife", "ezreslife", "reslife", "rezlife"],
+    "title": "eRezLife",
+    "target": "https://northeastern.erezlife.com",
+    "description": "Create roommate agreements, apply to be an RA"
+  },
+  {
     "keywords": ["fafsa", "fasfa"],
     "title": "FAFSA",
     "target": "https://fafsa.ed.gov/",

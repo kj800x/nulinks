@@ -156,12 +156,6 @@ const nulinks_data = [
     "description": "Access free online software training"
   },
   {
-    "keywords": ["kb", "knowledge", "knowledge-base", "it", "technology"],
-    "title": "Knowledge Base",
-    "target": "https://northeastern.service-now.com/sp/",
-    "description": "Find answers to your Northeastern technology questions 24x7"
-  },
-  {
     "keywords": ["study-abroad-apply"],
     "title": "Global Experiences | Apply to Study Abroad",
     "target": "https://prod-web.neu.edu/wasapp/oisp/app/secure/s/main.action"
@@ -377,6 +371,12 @@ const nulinks_data = [
     "title": "Connect to RemoteApp",
     "target": "https://remoteapp.nunet.neu.edu/RDWeb/Pages/en-US/login.aspx",
     "description": "The client should be preinstalled for most Windows operating systems. Go to the RemoteApp main page for further information. RemoteApp is a service that allows members of the university community to access computer applications remotely. Support for RemoteApp is available by calling the ITS Service Desk at 617.373.4357 (xHELP)"
+  },
+  {
+    "keywords": ["it", "resnet", "reznet", "service-now", "kb", "knowledgebase", "knowledge-base", "technology"],
+    "title": "Northeastern IT Service and Knowledge Base Portal",
+    "target": "https://northeastern.service-now.com/sp?id=index",
+    "description": "Manage your IT tickets and access Knowledge Base articles: find answers to your Northeastern technology questions 24x7"
   },
   {
     "keywords": ["housing", "housing-online"],

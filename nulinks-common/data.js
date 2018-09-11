@@ -231,7 +231,7 @@ const nulinks_data = [
     "description": "If you need an item that is unavailable at Northeastern, we will try to borrow it for you from another library"
   },
   {
-    "keywords": ["cite"],
+    "keywords": ["cite", "mla", "apa", "ieee"],
     "title": "Citation guides",
     "target": "http://subjectguides.lib.neu.edu/Citations",
     "description": "A guide to frequently-used style guides and to research tools, and software, to help manage and auto-format your citations"
@@ -377,6 +377,12 @@ const nulinks_data = [
     "title": "Northeastern IT Service and Knowledge Base Portal",
     "target": "https://northeastern.service-now.com/sp?id=index",
     "description": "Manage your IT tickets and access Knowledge Base articles: find answers to your Northeastern technology questions 24x7"
+  },
+  {
+    "keywords": ["ethernet", "wired-device", "register-resnet"],
+    "title": "Register Resnet Wired Devices",
+    "target": "https://prod-web.neu.edu/wasapp/ResNetLogin/loginpage.html",
+    "description": "Gain internet access on ethernet/wired devices"
   },
   {
     "keywords": ["housing", "housing-online"],

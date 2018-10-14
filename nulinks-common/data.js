@@ -379,6 +379,12 @@ const nulinks_data = [
     "description": "Manage your IT tickets and access Knowledge Base articles: find answers to your Northeastern technology questions 24x7"
   },
   {
+    "keywords": ["tv", "xfinity", "xfinity-on-campus", "cable"],
+    "title": "Access XFINITY On-Campus",
+    "target": "https://www.xfinityoncampus.com/home",
+    "description": "Watch TV from your computer if you live in on-campus housing"
+  },
+  {
     "keywords": ["ethernet", "wired-device", "register-resnet"],
     "title": "Register Resnet Wired Devices",
     "target": "https://prod-web.neu.edu/wasapp/ResNetLogin/loginpage.html",

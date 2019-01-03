@@ -15,7 +15,8 @@ chrome.omnibox.onInputChanged.addListener((text, suggest) => {
 chrome.omnibox.onInputEntered.addListener(text => {
   const matches = searchText(nulinks_data)(text);
   if (text === "" || matches.length === 0) {
-    setTimeout(() => chrome.tabs.update(undefined, {url: chrome.extension.getURL("pages/index.html")}), 10);
+    const query = text !== "" ? `?q=${encodeURIComponent(text)}` : "";
+    setTimeout(() => chrome.tabs.update(undefined, {url: chrome.extension.getURL(`pages/index.html${query}`)}), 10);
     return;
   }
   const match = matches[0].value;

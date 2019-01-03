@@ -12,10 +12,10 @@ const renderResult = selectedResult => (result, index) => (
   />
 );
 
-export default ({results, selectedResult}) => (
+export default ({results, selectedResult, searchQuery}) => (
   <div className="resultsContainer">
     <ul className="resultsList">
-      {results.length === 0 && <ZeroState />}
+      {results.length === 0 && <ZeroState searchQuery={searchQuery}/>}
       {results.map(renderResult(selectedResult))}
     </ul>
   </div>

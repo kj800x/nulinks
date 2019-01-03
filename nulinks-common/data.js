@@ -144,6 +144,12 @@ const nulinks_data = [
     "description": "Time log entry for students involved in Civic Engagement Program (CEP)"
   },
   {
+    "keywords": ["software", "windows-software", "adobe-software", "microsoft-software", "vmware-software", "parallels-software"],
+    "title": "On The Hub",
+    "target": "http://neu.onthehub.com/",
+    "description": "Free and Discounted Software for your computer"
+  },
+  {
     "keywords": ["drc", "drc-services"],
     "title": "DRC Services",
     "target": "https://northeastern.secure.force.com/public/apex/ITSDRCMainEntry",

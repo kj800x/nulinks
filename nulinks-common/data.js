@@ -140,8 +140,8 @@ const nulinks_data = [
   {
     "keywords": ["service-time-logs"],
     "title": "Service Time Logs",
-    "target": "https://prod-web.neu.edu/wasapp/CommunityEngagement/",
-    "description": "For students and S-LTAs involved in Civic Engagement Program, Service-Learning Courses, and Massachusetts Promise Fellowship"
+    "target": "https://northeastern.secure.force.com/public/apex/ITSComEngMainEntry",
+    "description": "Time log entry for students involved in Civic Engagement Program (CEP)"
   },
   {
     "keywords": ["drc", "drc-services"],

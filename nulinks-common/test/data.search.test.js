@@ -24,6 +24,9 @@ describe("searching data.js with searchText.js", () => {
   expectFirst("faf", "FAFSA");
   expectFirst("hours", "NU Dining Hours");
   expectFirst("pay", "Make a Payment with NUPay");
+  expectFirst("emergency", "Emergency? Call: 617-373-3333");
+  expectFirst("fire", "Emergency? Call: 617-373-3333");
+  expectFirst("medical", "Emergency? Call: 617-373-3333");
   expectFirst("bill", "Make a Payment with NUPay");
   expectFirst("bills", "Make a Payment with NUPay");
   expectFirst("work", "Student Employment (workstudy, timesheets)");

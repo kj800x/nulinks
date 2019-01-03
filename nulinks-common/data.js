@@ -71,12 +71,12 @@ const nulinks_data = [
     "target": "https://nudining.com/hours"
   },
   {
-    "keywords": ["nupd", "police"],
+    "keywords": ["nupd", "police-site"],
     "title": "NUPD Website",
     "target": "https://www.northeastern.edu/nupd"
   },
   {
-    "keywords": ["help", "emergency"],
+    "keywords": ["emergency", "police", "fire", "medical", "help"],
     "title": "Emergency? Call: 617-373-3333",
     "target": "https://www.northeastern.edu/nupd/contact-information/"
   },

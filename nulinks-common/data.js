@@ -567,6 +567,12 @@ const nulinks_data = [
     "title": "Residential Building Floor Plans",
     "target": "https://www.northeastern.edu/housing/dnaesantoelrihtriseertn/",
     "description": "Floor plans for Northeastern University Residential Buildings"
+  },
+  {
+    "keywords": ["pattern-of-attendance"],
+    "title": "Pattern of Attendance",
+    "target": "https://wl11gp.neu.edu/udcprod8/bzkspoa.P_SHOW_POA",
+    "description": "View your Pattern of Attendance"
   }
 ];
 

@@ -65,7 +65,7 @@ class App extends Component {
           <Title />
           <div className="contents">
             <Search value={this.state.searchValue} onChange={this.handleSearchChange} onSelectedResultChange={this.handleSelectedResultChange} onGo={this.handleGo}/>
-            <Results results={this.state.searchResults} selectedResult={this.state.selectedResult}/>
+            <Results results={this.state.searchResults} selectedResult={this.state.selectedResult} searchQuery={this.state.searchValue}/>
           </div>
           <Footer />
         </section>

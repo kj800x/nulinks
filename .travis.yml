@@ -3,9 +3,10 @@ node_js:
   - "node"
 jobs:
   include:
-    - stage: test
-      script: bash .bin/build-site.sh
-      script: bash .bin/test-common.sh
+    - script: bash .bin/build-site.sh
+      name: "Build nulinks-site"
+    - script: bash .bin/test-common.sh
+      name: "Test nulinks-common"
 deploy:
   skip_cleanup: true
   provider: script

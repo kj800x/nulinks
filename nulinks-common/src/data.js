@@ -1,4 +1,4 @@
-const nulinks_data = [
+const NULINKS_DATA = [
   {
     "keywords": ["myneu", "mynortheastern", "m"],
     "title": "MyNortheastern",
@@ -582,8 +582,4 @@ const nulinks_data = [
   }
 ];
 
-if (typeof __CHROME_EXTENSION__ !== "undefined") {
-  exports = {};
-}
-exports.nulinks_data = nulinks_data;
-exports.default = nulinks_data;
+export default NULINKS_DATA;

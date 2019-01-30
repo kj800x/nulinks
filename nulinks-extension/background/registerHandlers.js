@@ -1,6 +1,9 @@
+import NULINKS_DATA from "../nulinks-common/src/data.js";
+import { search } from "../nulinks-common/src/search.js";
+import { toDefaultSuggestion, toSuggestion } from "../nulinks-common/src/format.js";
+
 chrome.omnibox.onInputChanged.addListener((text, suggest) => {
-  const matches = searchText(nulinks_data)(text);
-  console.log(matches);
+  const matches = search(NULINKS_DATA)(text);
   if (matches.length === 0) {
     chrome.omnibox.setDefaultSuggestion({"description": "NULinks"})
   }
@@ -13,14 +16,13 @@ chrome.omnibox.onInputChanged.addListener((text, suggest) => {
 });
 
 chrome.omnibox.onInputEntered.addListener(text => {
-  const matches = searchText(nulinks_data)(text);
+  const matches = search(NULINKS_DATA)(text);
   if (text === "" || matches.length === 0) {
     const query = text !== "" ? `?q=${encodeURIComponent(text)}` : "";
     setTimeout(() => chrome.tabs.update(undefined, {url: chrome.extension.getURL(`pages/index.html${query}`)}), 10);
     return;
   }
   const match = matches[0].value;
-  console.log(`Text "${text}" resolved to page "${JSON.stringify(match)}"`);
   chrome.tabs.update(undefined, {url: match.target});
 });
 

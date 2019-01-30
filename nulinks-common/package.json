@@ -1,6 +1,6 @@
 {
   "name": "nulinks-common",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/kj800x/nulinks.git"
@@ -8,6 +8,12 @@
   "author": "Kevin Johnson",
   "license": "MIT",
   "devDependencies": {
-    "jest-junit": "^5.1.0"
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^24.0.0"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }

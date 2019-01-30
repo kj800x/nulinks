@@ -6,15 +6,12 @@
   "scripts": {
     "build": "bash .bin/build.sh",
     "install": "bash .bin/install.sh",
-    "test": "jest"
+    "test": "cd nulinks-common && ./node_modules/.bin/jest"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/kj800x/nulinks.git"
   },
   "author": "Kevin Johnson",
-  "license": "MIT",
-  "devDependencies": {
-    "jest": "^23.5.0"
-  }
+  "license": "MIT"
 }

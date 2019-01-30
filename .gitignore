@@ -1,3 +1,4 @@
+build/*
 node_modules/*
 nulinks-extension.zip
 .idea/*

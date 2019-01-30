@@ -3,19 +3,17 @@ import './App.css';
 import Title from "../Title/Title";
 import Search from "../Search/Search";
 import Results from "../Results/Results";
-import { nulinks_data } from 'nulinks-common/data';
-import { searchText } from 'nulinks-common/searchText';
+import NULINKS_DATA from 'nulinks-common/src/data';
+import { search } from 'nulinks-common/src/search';
 import Footer from "../Footer/Footer";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    console.log(nulinks_data);
-    console.log(searchText);
     this.state = {
       searchValue: "",
       selectedResult: null,
-      searchResults: searchText(nulinks_data)(""),
+      searchResults: search(NULINKS_DATA)(""),
     };
     this.handleSearchChange = this.handleSearchChange.bind(this);
     this.handleSelectedResultChange = this.handleSelectedResultChange.bind(this);
@@ -37,7 +35,7 @@ class App extends Component {
     this.setState({
       searchValue: value,
       selectedResult: (value === "" ? null : 0),
-      searchResults: searchText(nulinks_data)(value),
+      searchResults: search(NULINKS_DATA)(value),
     }, callback)
   }
 

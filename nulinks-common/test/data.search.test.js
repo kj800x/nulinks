@@ -1,13 +1,13 @@
-const { nulinks_data } = require("../data");
-const { searchText } = require("../searchText");
+import NULINKS_DATA from "../src/data";
+import { search } from "../src/search";
 
 const expectFirst = (searchTerm, firstResultTitle) => {
   it("works on " + searchTerm, () => {
-    expect(searchText(nulinks_data)(searchTerm)[0].value.title).toEqual(firstResultTitle)
+    expect(search(NULINKS_DATA)(searchTerm)[0].value.title).toEqual(firstResultTitle)
   });
 };
 
-describe("searching data.js with searchText.js", () => {
+describe("searching data.js with search.js", () => {
   expectFirst("regis", "Class Registration");
   expectFirst("reg", "Class Registration");
   expectFirst("class", "My Schedule");

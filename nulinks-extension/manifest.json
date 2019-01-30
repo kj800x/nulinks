@@ -12,12 +12,7 @@
     "tabs"
   ],
   "background": {
-    "scripts": [
-      "background/flagExtension.js",
-      "nulinks-common/data.js",
-      "nulinks-common/searchText.js",
-      "background/registerHandlers.js"
-    ],
+    "page": "background/background.html",
     "persistent": false
   },
   "omnibox": { "keyword" : "nu" },

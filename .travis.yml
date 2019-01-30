@@ -1,15 +1,22 @@
 language: node_js
 node_js:
   - "node"
+stages:
+  - compile
+  - test
+  - deploy
 jobs:
   include:
-    - script: bash .bin/build-site.sh
+    - stage: compile
       name: "Build nulinks-site"
-    - script: bash .bin/test-common.sh
+      script: bash .bin/build-site.sh
+    - stage: test
       name: "Test nulinks-common"
-deploy:
-  skip_cleanup: true
-  provider: script
-  script: bash .bin/deploy.sh
-  on: 
-    branch: master
+      script: bash .bin/test-common.sh
+    - stage: deploy
+      script: ./deploy
+      skip_cleanup: true
+      provider: script
+      script: bash .bin/deploy.sh
+      on: 
+        branch: master

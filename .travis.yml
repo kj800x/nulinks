@@ -7,7 +7,8 @@ jobs:
       script: bash .bin/build-site.sh
       script: bash .bin/test-common.sh
 deploy:
+  skip_cleanup: true
   provider: script
-  script: bash scripts/deploy.sh
+  script: bash .bin/deploy.sh
   on: 
     branch: master

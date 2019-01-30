@@ -1,2 +1,2 @@
-cd ../nulinks-site;
+cd nulinks-site;
 npm run build;

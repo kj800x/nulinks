@@ -2,12 +2,11 @@ language: node_js
 node_js:
   - "node"
 stages:
-  - compile
   - test
   - deploy
 jobs:
   include:
-    - stage: compile
+    - stage: test
       name: "Build nulinks-site"
       script: bash .bin/build-site.sh
     - stage: test

@@ -14,9 +14,20 @@ jobs:
       name: "Test nulinks-common"
       script: bash .bin/test-common.sh
     - stage: deploy
-      script: ./deploy
-      skip_cleanup: true
-      provider: script
-      script: bash .bin/deploy.sh
-      on: 
-        branch: master
+      name: "Deploy to S3"
+      script: /bin/true
+      deploy:
+        skip_cleanup: true
+        provider: script
+        script: bash .bin/deploy.sh "part1"
+        on: 
+          branch: master
+    - stage: deploy
+      name: "Deploy to Chrome Web Store"
+      script: /bin/true
+      deploy:
+        skip_cleanup: true
+        provider: script
+        script: bash .bin/deploy.sh "part2"
+        on: 
+          branch: master

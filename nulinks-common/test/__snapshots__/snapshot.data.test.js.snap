@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`searching data.js with the alphabet via snapshot works on a 1`] = `"Advising Appointments"`;
+
+exports[`searching data.js with the alphabet via snapshot works on b 1`] = `"Northeastern Blackboard"`;
+
+exports[`searching data.js with the alphabet via snapshot works on c 1`] = `"My Schedule"`;
+
+exports[`searching data.js with the alphabet via snapshot works on d 1`] = `"DRC Services"`;
+
+exports[`searching data.js with the alphabet via snapshot works on e 1`] = `"eRezLife"`;
+
+exports[`searching data.js with the alphabet via snapshot works on f 1`] = `"Residential Building Floor Plans"`;
+
+exports[`searching data.js with the alphabet via snapshot works on g 1`] = `"My Grades"`;
+
+exports[`searching data.js with the alphabet via snapshot works on h 1`] = `"Housing Online"`;
+
+exports[`searching data.js with the alphabet via snapshot works on i 1`] = `"I Am Here"`;
+
+exports[`searching data.js with the alphabet via snapshot works on j 1`] = `"NUCareers"`;
+
+exports[`searching data.js with the alphabet via snapshot works on k 1`] = `"Northeastern IT Service and Knowledge Base Portal"`;
+
+exports[`searching data.js with the alphabet via snapshot works on l 1`] = `"LaundryView"`;
+
+exports[`searching data.js with the alphabet via snapshot works on m 1`] = `"MyNortheastern"`;
+
+exports[`searching data.js with the alphabet via snapshot works on n 1`] = `"NUCareers"`;
+
+exports[`searching data.js with the alphabet via snapshot works on o 1`] = `"OrgSync"`;
+
+exports[`searching data.js with the alphabet via snapshot works on p 1`] = `"Make a Payment with NUPay"`;
+
+exports[`searching data.js with the alphabet via snapshot works on q 1`] = `"Facilities Online Work Request"`;
+
+exports[`searching data.js with the alphabet via snapshot works on r 1`] = `"Class Registration"`;
+
+exports[`searching data.js with the alphabet via snapshot works on s 1`] = `"SearchNEU"`;
+
+exports[`searching data.js with the alphabet via snapshot works on t 1`] = `"Student Employee Self-Service"`;
+
+exports[`searching data.js with the alphabet via snapshot works on u 1`] = `"UHCS Website"`;
+
+exports[`searching data.js with the alphabet via snapshot works on v 1`] = `"View the Classrooms"`;
+
+exports[`searching data.js with the alphabet via snapshot works on w 1`] = `"Student Employee Self-Service"`;
+
+exports[`searching data.js with the alphabet via snapshot works on x 1`] = `"Access XFINITY On-Campus"`;
+
+exports[`searching data.js with the alphabet via snapshot works on y 1`] = `"NU Cauldron Yearbook"`;
+
+exports[`searching data.js with the alphabet via snapshot works on z 1`] = `"eRezLife"`;

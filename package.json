@@ -6,7 +6,8 @@
   "scripts": {
     "build": "bash .bin/build.sh",
     "install": "bash .bin/install.sh",
-    "test": "cd nulinks-common && ./node_modules/.bin/jest"
+    "test": "cd nulinks-common && ./node_modules/.bin/jest",
+    "test:update": "cd nulinks-common && ./node_modules/.bin/jest --updateSnapshot"
   },
   "repository": {
     "type": "git",

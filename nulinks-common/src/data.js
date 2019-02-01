@@ -37,7 +37,7 @@ const NULINKS_DATA = [
     "target": "https://neu.biginterview.com/"
   },
   {
-    "keywords": ["nucareers", "coop-search", "co-op-search", "nucarreers"],
+    "keywords": ["nucareers", "coop-search", "co-op-search", "nucarreers", "jobs"],
     "title": "NUCareers",
     "target": "https://nucareers.northeastern.edu/Shibboleth.sso/Login?target=https://nucareers.northeastern.edu/secure/neuLogin.htm?action=login",
     "description": "Northeastern University's database of career and cooperative education job opportunities"
@@ -454,7 +454,7 @@ const NULINKS_DATA = [
     "description": "Complete the NUSHP waiver form if you have comparable health insurance coverage with an alternative domestic provider"
   },
   {
-    "keywords": ["student-employment", "workstudy", "workstudy-timesheets", "timesheets"],
+    "keywords": ["student-employment", "workstudy", "workstudy-jobs", "workstudy-timesheets", "timesheets"],
     "title": "Student Employment (workstudy, timesheets)",
     "target": "https://studentemployment.neu.edu/JobXHome.aspx",
     "description": "Search and apply for part-time student employment opportunities including Federal Work-Study positions"

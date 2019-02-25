@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`searching data.js matches snapshot for term a 1`] = `"Advising Appointments"`;
+exports[`searching data.js matches snapshot for term a 1`] = `"Citation guides"`;
 
 exports[`searching data.js matches snapshot for term audit 1`] = `"My Degree Audit"`;
 
@@ -10,7 +10,7 @@ exports[`searching data.js matches snapshot for term bill 1`] = `"Make a Payment
 
 exports[`searching data.js matches snapshot for term bills 1`] = `"Make a Payment with NUPay"`;
 
-exports[`searching data.js matches snapshot for term c 1`] = `"My Schedule"`;
+exports[`searching data.js matches snapshot for term c 1`] = `"NUCareers"`;
 
 exports[`searching data.js matches snapshot for term class 1`] = `"My Schedule"`;
 
@@ -20,13 +20,13 @@ exports[`searching data.js matches snapshot for term co-op-se 1`] = `"NUCareers"
 
 exports[`searching data.js matches snapshot for term coun 1`] = `"Advising Appointments"`;
 
-exports[`searching data.js matches snapshot for term d 1`] = `"DRC Services"`;
+exports[`searching data.js matches snapshot for term d 1`] = `"NU Dining Hours"`;
 
-exports[`searching data.js matches snapshot for term e 1`] = `"eRezLife"`;
+exports[`searching data.js matches snapshot for term e 1`] = `"Emergency? Call: 617-373-3333"`;
 
 exports[`searching data.js matches snapshot for term emergency 1`] = `"Emergency? Call: 617-373-3333"`;
 
-exports[`searching data.js matches snapshot for term f 1`] = `"Residential Building Floor Plans"`;
+exports[`searching data.js matches snapshot for term f 1`] = `"Emergency? Call: 617-373-3333"`;
 
 exports[`searching data.js matches snapshot for term faf 1`] = `"FAFSA"`;
 
@@ -36,15 +36,15 @@ exports[`searching data.js matches snapshot for term fin 1`] = `"My Financial Ai
 
 exports[`searching data.js matches snapshot for term fire 1`] = `"Emergency? Call: 617-373-3333"`;
 
-exports[`searching data.js matches snapshot for term g 1`] = `"My Grades"`;
+exports[`searching data.js matches snapshot for term g 1`] = `"Husky Mail"`;
 
-exports[`searching data.js matches snapshot for term h 1`] = `"Housing Online"`;
+exports[`searching data.js matches snapshot for term h 1`] = `"Emergency? Call: 617-373-3333"`;
 
 exports[`searching data.js matches snapshot for term hours 1`] = `"NU Dining Hours"`;
 
 exports[`searching data.js matches snapshot for term hous 1`] = `"Housing Online"`;
 
-exports[`searching data.js matches snapshot for term i 1`] = `"I Am Here"`;
+exports[`searching data.js matches snapshot for term i 1`] = `"Citation guides"`;
 
 exports[`searching data.js matches snapshot for term j 1`] = `"NUCareers"`;
 
@@ -62,31 +62,31 @@ exports[`searching data.js matches snapshot for term n 1`] = `"NUCareers"`;
 
 exports[`searching data.js matches snapshot for term nuca 1`] = `"NUCareers"`;
 
-exports[`searching data.js matches snapshot for term o 1`] = `"OrgSync"`;
+exports[`searching data.js matches snapshot for term o 1`] = `"Scholar OneSearch"`;
 
-exports[`searching data.js matches snapshot for term p 1`] = `"Make a Payment with NUPay"`;
+exports[`searching data.js matches snapshot for term p 1`] = `"Emergency? Call: 617-373-3333"`;
 
 exports[`searching data.js matches snapshot for term pay 1`] = `"Make a Payment with NUPay"`;
 
 exports[`searching data.js matches snapshot for term q 1`] = `"Facilities Online Work Request"`;
 
-exports[`searching data.js matches snapshot for term r 1`] = `"Class Registration"`;
+exports[`searching data.js matches snapshot for term r 1`] = `"Co-op Self Assessment Site"`;
 
-exports[`searching data.js matches snapshot for term reg 1`] = `"Class Registration"`;
+exports[`searching data.js matches snapshot for term reg 1`] = `"Course Registration"`;
 
-exports[`searching data.js matches snapshot for term regis 1`] = `"Class Registration"`;
+exports[`searching data.js matches snapshot for term regis 1`] = `"Course Registration"`;
 
-exports[`searching data.js matches snapshot for term s 1`] = `"SearchNEU"`;
+exports[`searching data.js matches snapshot for term s 1`] = `"Service Time Logs"`;
 
 exports[`searching data.js matches snapshot for term sched 1`] = `"My Schedule"`;
 
-exports[`searching data.js matches snapshot for term t 1`] = `"Student Employee Self-Service"`;
+exports[`searching data.js matches snapshot for term t 1`] = `"Access XFINITY On-Campus"`;
 
-exports[`searching data.js matches snapshot for term u 1`] = `"UHCS Website"`;
+exports[`searching data.js matches snapshot for term u 1`] = `"myHealth Center (UHCS)"`;
 
-exports[`searching data.js matches snapshot for term v 1`] = `"View the Classrooms"`;
+exports[`searching data.js matches snapshot for term v 1`] = `"On The Hub"`;
 
-exports[`searching data.js matches snapshot for term w 1`] = `"Student Employee Self-Service"`;
+exports[`searching data.js matches snapshot for term w 1`] = `"Student Employment (workstudy, timesheets)"`;
 
 exports[`searching data.js matches snapshot for term work 1`] = `"Student Employment (workstudy, timesheets)"`;
 
@@ -96,4 +96,4 @@ exports[`searching data.js matches snapshot for term x 1`] = `"Access XFINITY On
 
 exports[`searching data.js matches snapshot for term y 1`] = `"NU Cauldron Yearbook"`;
 
-exports[`searching data.js matches snapshot for term z 1`] = `"eRezLife"`;
+exports[`searching data.js matches snapshot for term z 1`] = `"Northeastern IT Service and Knowledge Base Portal"`;

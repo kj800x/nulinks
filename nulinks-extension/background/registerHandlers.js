@@ -8,7 +8,7 @@ chrome.omnibox.onInputChanged.addListener((text, suggest) => {
     chrome.omnibox.setDefaultSuggestion({"description": "NULinks"})
   }
   if (matches.length > 0) {
-    chrome.omnibox.setDefaultSuggestion(toDefaultSuggestion(text, matches[0]))
+    chrome.omnibox.setDefaultSuggestion(toDefaultSuggestion(matches[0]))
   }
   if (matches.length > 1) {
     suggest(matches.slice(1).map(toSuggestion));

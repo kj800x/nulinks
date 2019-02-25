@@ -9,8 +9,7 @@ export function toDefaultSuggestion(match) {
 }
 
 export function toSuggestion(match) {
-  return {
-    content: toLower(match.representativeKeyword),
-    description: xmlEscape(toLower(match.representativeKeyword)) + " <match>" + xmlEscape(match.value.title) + "</match> <url>" + xmlEscape(match.value.target) + "</url>"
-  };
+  return Object.assign({
+    content: toLower(match.representativeKeyword)
+  }, toDefaultSuggestion(match))
 }

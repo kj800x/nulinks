@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReactDom from "react-dom";
-
 import { A } from "../../util/A";
+import ResultExtra from "./ResultExtra";
 
 import "./Result.css";
 
@@ -33,6 +33,7 @@ export default class Result extends Component {
           <div className="resultDescription">
             {this.props.result.value.description}
           </div>
+          {this.props.selected && <ResultExtra result={this.props.result} />}
         </A>
       </li>
     );

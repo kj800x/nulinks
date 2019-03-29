@@ -9,13 +9,14 @@
     "64": "icons/64.png"
   },
   "permissions": [
-    "tabs"
+    "tabs",
+    "https://s3.amazonaws.com/nulinks-lamda-out.kj800x.com/*"
   ],
   "background": {
     "page": "background/background.html",
     "persistent": false
   },
-  "omnibox": { "keyword" : "nu" },
+  "omnibox": { "keyword": "nu" },
   "browser_action": {
     "default_title": "Open NULinks"
   },

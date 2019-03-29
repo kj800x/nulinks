@@ -1,0 +1,19 @@
+.food-truck-table {
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.food-truck-table th {
+  padding: 4px;
+}
+
+.food-truck-table td,
+.food-truck-table th {
+  border: 1px solid white;
+  color: white;
+}
+
+.food-truck-current {
+  font-weight: bold;
+  color: white;
+}

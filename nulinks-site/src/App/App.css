@@ -5,6 +5,7 @@
 .page {
   margin: 0 auto;
   display: block;
+  max-width: 1000px;
 }
 
 .contents {

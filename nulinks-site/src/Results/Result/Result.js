@@ -19,11 +19,9 @@ export default class Result extends Component {
   render() {
     return (
       <li className={"result" + (this.props.selected ? " selected" : "")}>
-        <div className="resultContents">
+        <A className="resultContents" href={this.props.result.value.target}>
           <div className="resultHeader">
-            <A className="resultTitle" href={this.props.result.value.target}>
-              {this.props.result.value.title}
-            </A>
+            <span className="resultTitle">{this.props.result.value.title}</span>
             <div className="resultGoLink">
               nu {this.props.result.representativeKeyword}
             </div>
@@ -31,7 +29,7 @@ export default class Result extends Component {
           <div className="resultDescription">
             {this.props.result.value.description}
           </div>
-        </div>
+        </A>
       </li>
     );
   }

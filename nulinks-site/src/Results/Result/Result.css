@@ -24,6 +24,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-decoration: none;
+}
+
+.resultContents:hover {
+  background: #eee;
+}
+
+.resultContents:active {
+  background: #ddd;
 }
 
 .resultHeader {

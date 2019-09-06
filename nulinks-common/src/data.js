@@ -15,6 +15,14 @@ const NULINKS_DATA = [
     usageFrequency: "ONCE"
   },
   {
+    keywords: ["canvas", "cv"],
+    title: "Canvas",
+    description:
+      "Experimental replacement for BlackBoard piloted in certain courses",
+    target: "http://northeastern.instructure.com",
+    usageFrequency: "DAILY"
+  },
+  {
     keywords: [
       "advising-calendar",
       "advising-appointments",
@@ -732,7 +740,7 @@ const NULINKS_DATA = [
     usageFrequency: "A FEW TIMES A SEMESTER"
   },
   {
-    keywords: ["mail", "husky-mail", "gmail"],
+    keywords: ["mail", "husky-mail", "gmail", "email"],
     title: "Husky Mail",
     target: "http://mail.google.com/a/husky.neu.edu",
     description: "Husky Mail is your University-provided email",

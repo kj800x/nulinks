@@ -1,5 +1,9 @@
-import React from 'react';
+import React from "react";
 
-const isPWA = () => window.matchMedia('(display-mode: standalone)').matches;
+const isPWA = () => window.matchMedia("(display-mode: standalone)").matches;
 
-export const A = props => <a {...props} target={isPWA() ? "_blank" : "_self"}>{props.children}</a>
+export const A = props => (
+  <a {...props} target={isPWA() ? "_blank" : "_self"}>
+    {props.children}
+  </a>
+);

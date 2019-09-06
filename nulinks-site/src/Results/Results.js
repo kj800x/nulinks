@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import Result from "./Result/Result";
 import ZeroState from "./ZeroState/ZeroState";
 
-import './Results.css'
+import "./Results.css";
 
 const renderResult = selectedResult => (result, index) => (
   <Result
@@ -12,11 +12,11 @@ const renderResult = selectedResult => (result, index) => (
   />
 );
 
-export default ({results, selectedResult, searchQuery}) => (
+export default ({ results, selectedResult, searchQuery }) => (
   <div className="resultsContainer">
     <ul className="resultsList">
-      {results.length === 0 && <ZeroState searchQuery={searchQuery}/>}
+      {results.length === 0 && <ZeroState searchQuery={searchQuery} />}
       {results.map(renderResult(selectedResult))}
     </ul>
   </div>
-)
+);

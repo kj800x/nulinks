@@ -15,12 +15,12 @@
 }
 
 .button {
-  background-color:#cc0000;
-  border:1px solid #660000;
-  border-radius:5px;
-  color:#fff;
-  margin:30px 10px;
-  padding:10px 10px 10px 10px;
+  background-color: #cc0000;
+  border: 1px solid #660000;
+  border-radius: 5px;
+  color: #fff;
+  margin: 30px 10px;
+  padding: 10px 10px 10px 10px;
   text-decoration: none;
   font-weight: bold;
 }

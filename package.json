@@ -7,12 +7,17 @@
     "build": "bash .bin/build.sh",
     "install": "bash .bin/install.sh",
     "test": "cd nulinks-common && ./node_modules/.bin/jest",
-    "test:update": "cd nulinks-common && ./node_modules/.bin/jest --updateSnapshot"
+    "test:update": "cd nulinks-common && ./node_modules/.bin/jest --updateSnapshot",
+    "prettier:write": "prettier \"**/*.{js,css}\" --write",
+    "lint": "prettier \"**/*.{js,css}\" --list-different"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/kj800x/nulinks.git"
   },
   "author": "Kevin Johnson",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "1.18.2"
+  }
 }

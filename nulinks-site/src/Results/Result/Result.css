@@ -1,14 +1,20 @@
 .result.selected {
-  background: rgba(0,136,204,0.80) !important;
+  background: rgba(0, 136, 204, 0.8) !important;
 }
 
-.result.selected, .result.selected .resultTitle, .result.selected .resultGoLink, .result.selected .resultDescription {
+.result.selected,
+.result.selected .resultTitle,
+.result.selected .resultGoLink,
+.result.selected .resultDescription {
   color: white !important;
   transition: none;
 }
 
-.result, .result .resultTitle, .result .resultGoLink, .result .resultDescription  {
-  transition: all .15s ease-in-out;
+.result,
+.result .resultTitle,
+.result .resultGoLink,
+.result .resultDescription {
+  transition: all 0.15s ease-in-out;
 }
 
 .resultContents {
@@ -54,7 +60,7 @@
 }
 
 .resultDescription {
-  color: rgba(0,0,0,0.50);
+  color: rgba(0, 0, 0, 0.5);
   text-overflow: ellipsis;
   overflow: hidden;
   max-width: 100%;

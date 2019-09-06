@@ -1,7 +1,7 @@
 import NULINKS_DATA from "../src/data";
 import { search } from "../src/search";
 
-const ALPHABET = [...'abcdefghijklmnopqrstuvwxyz'];
+const ALPHABET = [..."abcdefghijklmnopqrstuvwxyz"];
 const IMPORTANT_SEARCH_TERMS = [
   "regis",
   "reg",
@@ -25,7 +25,7 @@ const IMPORTANT_SEARCH_TERMS = [
   "bill",
   "bills",
   "work",
-  "work-re",
+  "work-re"
 ];
 
 const TEST_CASES = [...ALPHABET, ...IMPORTANT_SEARCH_TERMS];
@@ -33,11 +33,11 @@ const TEST_CASES = [...ALPHABET, ...IMPORTANT_SEARCH_TERMS];
 const itsFirstResultMatchesSnapshot = searchTerm => {
   it(`matches snapshot for term ${searchTerm}`, () => {
     const results = search(NULINKS_DATA)(searchTerm);
-    const value = (results.length > 0) ? (results[0].value.title) : null;
+    const value = results.length > 0 ? results[0].value.title : null;
     expect(value).toMatchSnapshot();
   });
 };
 
 describe("searching data.js", () => {
-  TEST_CASES.map(itsFirstResultMatchesSnapshot)
+  TEST_CASES.map(itsFirstResultMatchesSnapshot);
 });

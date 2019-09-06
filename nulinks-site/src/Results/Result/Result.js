@@ -1,14 +1,18 @@
-import React, {Component} from 'react';
-import ReactDom from 'react-dom';
+import React, { Component } from "react";
+import ReactDom from "react-dom";
 
-import { A } from '../../util/A';
+import { A } from "../../util/A";
 
 import "./Result.css";
 
 export default class Result extends Component {
   componentDidUpdate() {
     if (this.props.selected) {
-      ReactDom.findDOMNode(this).scrollIntoView({"behavior": "instant", "block": "nearest", "inline": "nearest"});
+      ReactDom.findDOMNode(this).scrollIntoView({
+        behavior: "instant",
+        block: "nearest",
+        inline: "nearest"
+      });
     }
   }
 
@@ -29,6 +33,6 @@ export default class Result extends Component {
           </div>
         </div>
       </li>
-    )
+    );
   }
 }

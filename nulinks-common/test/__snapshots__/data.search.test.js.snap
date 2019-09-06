@@ -10,7 +10,7 @@ exports[`searching data.js matches snapshot for term bill 1`] = `"Make a Payment
 
 exports[`searching data.js matches snapshot for term bills 1`] = `"Make a Payment with NUPay"`;
 
-exports[`searching data.js matches snapshot for term c 1`] = `"NUCareers"`;
+exports[`searching data.js matches snapshot for term c 1`] = `"Canvas"`;
 
 exports[`searching data.js matches snapshot for term class 1`] = `"My Schedule"`;
 
@@ -48,7 +48,7 @@ exports[`searching data.js matches snapshot for term i 1`] = `"Citation guides"`
 
 exports[`searching data.js matches snapshot for term j 1`] = `"NUCareers"`;
 
-exports[`searching data.js matches snapshot for term k 1`] = `"Northeastern IT Service and Knowledge Base Portal"`;
+exports[`searching data.js matches snapshot for term k 1`] = `"Khoury College Github"`;
 
 exports[`searching data.js matches snapshot for term l 1`] = `"LaundryView"`;
 

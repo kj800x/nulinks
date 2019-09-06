@@ -114,8 +114,8 @@ const NULINKS_DATA = [
     usageFrequency: "A FEW TIMES A SEMESTER"
   },
   {
-    keywords: ["git", "github", "ccis-github"],
-    title: "CCIS Github",
+    keywords: ["git", "github", "ccis-github", "khoury-github"],
+    title: "Khoury College Github",
     target: "https://github.ccs.neu.edu/",
     usageFrequency: "A FEW TIMES A SEMESTER"
   },
@@ -127,8 +127,8 @@ const NULINKS_DATA = [
     usageFrequency: "A FEW TIMES A SEMESTER"
   },
   {
-    keywords: ["myccis", "ccis-profile-manager"],
-    title: "MyCCIS: CCIS Profile Manager",
+    keywords: ["myccis", "ccis-profile-manager", "khoury-profile-manager"],
+    title: "MyCCIS: Khoury Profile Manager",
     target: "https://my.ccs.neu.edu",
     usageFrequency: "ONCE A SEMESTER"
   },

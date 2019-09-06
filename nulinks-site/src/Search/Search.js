@@ -22,7 +22,7 @@ export default ({ value, onChange, onSelectedResultChange, onGo }) => (
       className="searchControl"
       autoComplete="off"
       spellCheck="false"
-      autoFocus="true"
+      autoFocus={true}
       placeholder="Search Northeastern sites..."
       value={value}
       onChange={({ target: { value } }) => onChange(value)}

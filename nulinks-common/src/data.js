@@ -38,7 +38,7 @@ const NULINKS_DATA = [
   },
   {
     keywords: ["blackboard", "bb"],
-    title: "Northeastern Blackboard",
+    title: "Blackboard",
     target: "https://northeastern.blackboard.com/",
     description:
       "Gain access to course materials online, transfer files, and interact with your instructor and other students",
@@ -106,6 +106,8 @@ const NULINKS_DATA = [
   {
     keywords: ["emergency", "police", "fire", "medical", "help"],
     title: "Emergency? Call: 617-373-3333",
+    description: "Emergency phone number for NEU Police/Fire/Medical",
+    mobileTarget: "tel:+16173733333",
     target: "https://www.northeastern.edu/nupd/contact-information/",
     usageFrequency: "DAILY"
   },
@@ -520,7 +522,7 @@ const NULINKS_DATA = [
       "knowledge-base",
       "technology"
     ],
-    title: "Northeastern IT Service and Knowledge Base Portal",
+    title: "IT Service and Knowledge Base Portal",
     target: "https://northeastern.service-now.com/sp?id=index",
     description:
       "Manage your IT tickets and access Knowledge Base articles: find answers to your Northeastern technology questions 24x7",
@@ -662,7 +664,7 @@ const NULINKS_DATA = [
   },
   {
     keywords: ["policies", "handbooks", "guidelines"],
-    title: "Northeastern Policies",
+    title: "Policies",
     target: "http://www.northeastern.edu/policies/",
     description:
       "University policies, handbooks, forms, guidelines and relevant resources are accessible through this website",

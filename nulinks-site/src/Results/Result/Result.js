@@ -19,7 +19,11 @@ export default class Result extends Component {
   render() {
     return (
       <li className={"result" + (this.props.selected ? " selected" : "")}>
-        <A className="resultContents" href={this.props.result.value.target}>
+        <A
+          className="resultContents"
+          href={this.props.result.value.target}
+          mobileHref={this.props.result.value.mobileTarget}
+        >
           <div className="resultHeader">
             <span className="resultTitle">{this.props.result.value.title}</span>
             <div className="resultGoLink">

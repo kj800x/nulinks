@@ -51,6 +51,14 @@ const NULINKS_DATA = [
     usageFrequency: "ONCE A SEMESTER"
   },
   {
+    keywords: ["piazza", "pizza", "pza"],
+    title: "Piazza",
+    target: "https://piazza.com/class",
+    description:
+      "Discussion boards for computer science classes",
+    usageFrequency: "A FEW TIMES A WEEK"
+  },
+  {
     keywords: ["nu-careers", "co-op-search", "nu-carreers", "jobs"],
     title: "NUCareers",
     target:

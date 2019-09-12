@@ -32,12 +32,13 @@ jobs:
   deploy-cws:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Use Node.js 12
+    - name: Clone Repo
+      uses: actions/checkout@master
+    - name: Setup Node.js 12
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-    - name:  build extension
+    - name:  Build Extension
       run: |
         # Install
         npm install
@@ -46,7 +47,7 @@ jobs:
         cd ..
         
         # Install jq
-        apt-get install --no-install-recommends -y jq
+        sudo apt-get install --no-install-recommends -y jq
         
         BUILD_NUM=$(git rev-list --count HEAD --first-parent)
         
@@ -92,7 +93,8 @@ jobs:
         cp /tmp/nulinks/nulinks-extension.zip .
       env:
         CI: true
-    - uses: actions/upload-artifact@master
+    - name: Upload Extension Artifact
+      uses: actions/upload-artifact@master
       with:
         name: built-extension-zip
         path: nulinks-extension.zip

@@ -46,9 +46,6 @@ jobs:
         npm run build
         cd ..
         
-        # Install jq
-        sudo apt-get install --no-install-recommends -y jq
-        
         BUILD_NUM=$(git rev-list --count HEAD --first-parent)
         
         pushd . > /dev/null
@@ -80,10 +77,11 @@ jobs:
         rm -rf /tmp/nulinks/nulinks-extension/nulinks-common/test
 
         # Add the build number to the version in the manifest
+        cd /tmp/nulinks/nulinks-extension
         jq ".version+=\".$BUILD_NUM\"" manifest.json
+        cd ..
 
         # Build the zip file
-        cd /tmp/nulinks
         zip -r nulinks-extension.zip nulinks-extension
 
         # Restore the CWD

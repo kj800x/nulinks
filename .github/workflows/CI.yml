@@ -6,14 +6,19 @@ jobs:
   test-js:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js 12
+    - name: Clone Repo
+      uses: actions/checkout@master
+    - name: Setup Node.js 12
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-    - name: npm install and test
+    - name: NPM Install
       run: |
         npm install
+      env:
+        CI: true
+    - name: Jest Tests
+      run: |
         npm test
       env:
         CI: true
@@ -21,14 +26,19 @@ jobs:
   build-site:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js 12
+    - name: Clone Repo
+      uses: actions/checkout@master
+    - name: Setup Node.js 12
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-    - name: npm install and build site
+    - name: NPM Install
       run: |
         npm install
+      env:
+        CI: true
+    - name: Build Site
+      run: |
         cd nulinks-site
         npm run build
       env:
@@ -37,14 +47,19 @@ jobs:
   run-prettier:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js 12
+    - name: Clone Repo
+      uses: actions/checkout@master
+    - name: Setup Node.js 12
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-    - name: npm install and lint
+    - name: NPM Install
       run: |
         npm install
+      env:
+        CI: true
+    - name: Lint
+      run: |
         npm run lint
       env:
         CI: true

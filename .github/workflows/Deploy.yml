@@ -100,6 +100,11 @@ jobs:
         cp /tmp/nulinks/nulinks-extension.zip .
       env:
         CI: true
+    - name: Upload Extension Artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: built-extension-zip
+        path: nulinks-extension.zip
     - name: Upload to Chrome Webstore
       run: |
         npx chrome-webstore-upload-cli upload --source nulinks-extension.zip --extension-id gfbdcgkehhkgfehdilpmldkeihiojjak --auto-publish

@@ -54,8 +54,7 @@ const NULINKS_DATA = [
     keywords: ["piazza", "pizza", "pza"],
     title: "Piazza",
     target: "https://piazza.com/class",
-    description:
-      "Discussion boards for computer science classes",
+    description: "Discussion boards for computer science classes",
     usageFrequency: "A FEW TIMES A WEEK"
   },
   {
@@ -348,8 +347,7 @@ const NULINKS_DATA = [
     keywords: ["print", "printer", "printers", "papercut"],
     title: "PaperCut",
     target: "https://papercut.northeastern.edu/",
-    description:
-      "Northeastern Print Management Service",
+    description: "Northeastern Print Management Service",
     usageFrequency: "A FEW TIMES A WEEK"
   },
   {
@@ -363,7 +361,8 @@ const NULINKS_DATA = [
     keywords: ["swipe2care", "meal-donation"],
     title: "Swipe2Care",
     target: "https://huskycardcenter.neu.edu/common/local_mealdonation.php",
-    description: "Swipe2Care is a program for students to donate their meal swipes as a means to help alleviate food insecurity within the Northeastern community",
+    description:
+      "Swipe2Care is a program for students to donate their meal swipes as a means to help alleviate food insecurity within the Northeastern community",
     usageFrequency: "ONCE A YEAR"
   },
   {

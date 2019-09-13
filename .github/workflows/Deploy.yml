@@ -8,19 +8,25 @@ jobs:
   deploy-s3:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Use Node.js 12
+    - name: Clone Repo
+      uses: actions/checkout@master
+    - name: Setup Node.js 12
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-    - name: npm install and build site
+    - name: NPM Install
       run: |
         npm install
+      env:
+        CI: true
+    - name: Build Site
+      run: |
         cd nulinks-site
         npm run build
       env:
         CI: true
-    - uses: jakejarvis/s3-sync-action@master
+    - name: Upload to S3
+      uses: jakejarvis/s3-sync-action@master
       with:
         args: --acl public-read
       env:
@@ -38,14 +44,17 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-    - name:  Build Extension
+    - name: Build Project
       run: |
         # Install
         npm install
         cd nulinks-site
         npm run build
         cd ..
-        
+      env:
+        CI: true
+    - name: Build Extension
+      run: |
         BUILD_NUM=$(git rev-list --count HEAD --first-parent)
         
         pushd . > /dev/null
@@ -91,8 +100,10 @@ jobs:
         cp /tmp/nulinks/nulinks-extension.zip .
       env:
         CI: true
-    - name: Upload Extension Artifact
-      uses: actions/upload-artifact@master
-      with:
-        name: built-extension-zip
-        path: nulinks-extension.zip
+    - name: Upload to Chrome Webstore
+      run: |
+        npx chrome-webstore-upload-cli upload --source nulinks-extension.zip --extension-id gfbdcgkehhkgfehdilpmldkeihiojjak --auto-publish
+      env:
+        CLIENT_ID: ${{ secrets.CWS_CLIENT_ID }}
+        CLIENT_SECRET: ${{ secrets.CWS_CLIENT_SECRET }}
+        REFRESH_TOKEN: ${{ secrets.CWS_REFRESH_TOKEN }}

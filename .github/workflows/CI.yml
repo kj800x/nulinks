@@ -1,0 +1,51 @@
+name: CI
+
+on: [push]
+
+jobs:
+  test-js:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js 12
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - name: npm install and test
+      run: |
+        npm install
+        npm test
+      env:
+        CI: true
+
+  build-site:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js 12
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - name: npm install and build site
+      run: |
+        npm install
+        cd nulinks-site
+        npm run build
+      env:
+        CI: true
+
+  run-prettier:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js 12
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - name: npm install and lint
+      run: |
+        npm install
+        npm run lint
+      env:
+        CI: true
+

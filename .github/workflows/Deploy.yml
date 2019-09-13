@@ -89,7 +89,7 @@ jobs:
 
         # Add the build number to the version in the manifest
         cd /tmp/nulinks/nulinks-extension
-        jq ".version+=\".$BUILD_NUM\"" manifest.json
+        jq ".version+=\".$BUILD_NUM\"" manifest.json > manifest.tmp.json && mv manifest.tmp.json manifest.json
         cd ..
 
         # Build the zip file

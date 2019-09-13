@@ -51,6 +51,13 @@ const NULINKS_DATA = [
     usageFrequency: "ONCE A SEMESTER"
   },
   {
+    keywords: ["piazza", "pizza", "pza"],
+    title: "Piazza",
+    target: "https://piazza.com/class",
+    description: "Discussion boards for computer science classes",
+    usageFrequency: "A FEW TIMES A WEEK"
+  },
+  {
     keywords: ["nu-careers", "co-op-search", "nu-carreers", "jobs"],
     title: "NUCareers",
     target:
@@ -335,6 +342,28 @@ const NULINKS_DATA = [
     description:
       "One-stop searching for books and e-books, videos, articles, digital media, and more",
     usageFrequency: "A FEW TIMES A WEEK"
+  },
+  {
+    keywords: ["print", "printer", "printers", "papercut"],
+    title: "PaperCut",
+    target: "https://papercut.northeastern.edu/",
+    description: "Northeastern Print Management Service",
+    usageFrequency: "A FEW TIMES A WEEK"
+  },
+  {
+    keywords: ["openmydoor", "lockout"],
+    title: "Open MyDoor",
+    target: "https://huskycardcenter.neu.edu/student/openmydoor.php",
+    description: "Unlock your bedroom/suite door remotely",
+    usageFrequency: "ONCE A YEAR"
+  },
+  {
+    keywords: ["swipe2care", "meal-donation"],
+    title: "Swipe2Care",
+    target: "https://huskycardcenter.neu.edu/common/local_mealdonation.php",
+    description:
+      "Swipe2Care is a program for students to donate their meal swipes as a means to help alleviate food insecurity within the Northeastern community",
+    usageFrequency: "ONCE A YEAR"
   },
   {
     keywords: ["parent-access", "guardian-access"],

@@ -4,8 +4,7 @@
   "private": true,
   "description": "Never need to use MyNEU again!",
   "scripts": {
-    "build": "bash .bin/build.sh",
-    "install": "bash .bin/install.sh",
+    "install": "cd nulinks-site && npm install && cd ../nulinks-common && npm install",
     "test": "cd nulinks-common && ./node_modules/.bin/jest",
     "test:update": "cd nulinks-common && ./node_modules/.bin/jest --updateSnapshot",
     "prettier:write": "prettier \"**/*.{js,css}\" --write",

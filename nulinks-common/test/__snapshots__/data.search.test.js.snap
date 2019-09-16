@@ -32,7 +32,11 @@ exports[`searching data.js matches snapshot for term faf 1`] = `"FAFSA"`;
 
 exports[`searching data.js matches snapshot for term fas 1`] = `"FAFSA"`;
 
-exports[`searching data.js matches snapshot for term fin 1`] = `"My Financial Aid Status"`;
+exports[`searching data.js matches snapshot for term fin 1`] = `"My Schedule"`;
+
+exports[`searching data.js matches snapshot for term final 1`] = `"My Schedule"`;
+
+exports[`searching data.js matches snapshot for term finan 1`] = `"My Financial Aid Status"`;
 
 exports[`searching data.js matches snapshot for term fire 1`] = `"Emergency? Call: 617-373-3333"`;
 
@@ -62,7 +66,7 @@ exports[`searching data.js matches snapshot for term n 1`] = `"NUCareers"`;
 
 exports[`searching data.js matches snapshot for term nuca 1`] = `"NUCareers"`;
 
-exports[`searching data.js matches snapshot for term o 1`] = `"Scholar OneSearch"`;
+exports[`searching data.js matches snapshot for term o 1`] = `"Microsoft Office 365"`;
 
 exports[`searching data.js matches snapshot for term p 1`] = `"Emergency? Call: 617-373-3333"`;
 
@@ -80,13 +84,13 @@ exports[`searching data.js matches snapshot for term s 1`] = `"Service Time Logs
 
 exports[`searching data.js matches snapshot for term sched 1`] = `"My Schedule"`;
 
-exports[`searching data.js matches snapshot for term t 1`] = `"Access XFINITY On-Campus"`;
+exports[`searching data.js matches snapshot for term t 1`] = `"Microsoft Office 365"`;
 
 exports[`searching data.js matches snapshot for term u 1`] = `"myHealth Center (UHCS)"`;
 
 exports[`searching data.js matches snapshot for term v 1`] = `"On The Hub"`;
 
-exports[`searching data.js matches snapshot for term w 1`] = `"Student Employment (workstudy, timesheets)"`;
+exports[`searching data.js matches snapshot for term w 1`] = `"Microsoft Office 365"`;
 
 exports[`searching data.js matches snapshot for term work 1`] = `"Student Employment (workstudy, timesheets)"`;
 

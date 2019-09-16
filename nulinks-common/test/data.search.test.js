@@ -15,6 +15,8 @@ const IMPORTANT_SEARCH_TERMS = [
   "audit",
   "coun",
   "fin",
+  "final",
+  "finan",
   "fas", // This one because I can never spell it correctly
   "faf",
   "hours",

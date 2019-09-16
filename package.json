@@ -2,7 +2,7 @@
   "name": "nulinks",
   "version": "0.0.1",
   "private": true,
-  "description": "Never need to use MyNEU again!",
+  "description": "MyNortheastern but faster!",
   "scripts": {
     "install": "cd nulinks-site && npm install && cd ../nulinks-common && npm install",
     "test": "cd nulinks-common && ./node_modules/.bin/jest",

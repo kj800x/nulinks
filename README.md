@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.com/kj800x/nulinks.svg?branch=master)](https://travis-ci.com/kj800x/nulinks)
+# NULinks [![Build Status](https://github.com/kj800x/nulinks/workflows/CI/badge.svg)](https://github.com/kj800x/nulinks/actions)

@@ -207,14 +207,28 @@ const NULINKS_DATA = [
     ],
     title: "On The Hub",
     target: "http://neu.onthehub.com/",
-    description: "Free and Discounted Software for your computer (but not Microsoft Office)",
+    description:
+      "Free and Discounted Software for your computer (but not Microsoft Office)",
     usageFrequency: "ONCE A SEMESTER"
   },
   {
-    keywords: ["microsoft-office", "office", "office-365", "word", "powerpoint", "excel", "onedrive", "sharepoint", "teams", "sway"],
+    keywords: [
+      "microsoft-office",
+      "office",
+      "office-365",
+      "word",
+      "powerpoint",
+      "excel",
+      "onedrive",
+      "sharepoint",
+      "teams",
+      "sway"
+    ],
     title: "Microsoft Office 365",
-    target: "https://sts.northeastern.edu/adfs/ls/?wa=wsignin1.0&wtrealm=urn:federation:MicrosoftOnline&wctx=wa%3Dwsignin1.0%26rpsnv%3D3%26ver%3D6.4.6456.0%26wp%3DMCMBI%26wreply%3Dhttps:%252F%252Fportal.office.com%252Flanding.aspx%253Ftarget%253D%25252fOLS%25252fMySoftware.aspx%26lc%3D1033%26id%3D501392",
-    description: "Access Word, PowerPoint, Excel and others. Sign in with your husky account but use @northeastern.edu instead of @husky.neu.edu",
+    target:
+      "https://sts.northeastern.edu/adfs/ls/?wa=wsignin1.0&wtrealm=urn:federation:MicrosoftOnline&wctx=wa%3Dwsignin1.0%26rpsnv%3D3%26ver%3D6.4.6456.0%26wp%3DMCMBI%26wreply%3Dhttps:%252F%252Fportal.office.com%252Flanding.aspx%253Ftarget%253D%25252fOLS%25252fMySoftware.aspx%26lc%3D1033%26id%3D501392",
+    description:
+      "Access Word, PowerPoint, Excel and others. Sign in with your husky account but use @northeastern.edu instead of @husky.neu.edu",
     usageFrequency: "A FEW TIMES A WEEK"
   },
   {
@@ -480,8 +494,9 @@ const NULINKS_DATA = [
     keywords: ["final-exam-conflict", "final-exam-conflict-form"],
     title: "Final Exam Registrar Website",
     target: "https://registrar.northeastern.edu/article/final-exams/",
-    description: "Access Final Exam Conflict information including the conflict form",
-    usageFrequency: "ONCE A SEMESTER",
+    description:
+      "Access Final Exam Conflict information including the conflict form",
+    usageFrequency: "ONCE A SEMESTER"
   },
   {
     keywords: ["searchneu", "searchnu", "search-classes"],

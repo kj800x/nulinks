@@ -814,12 +814,26 @@ const NULINKS_DATA = [
     usageFrequency: "ONCE"
   },
   {
-    keywords: ["nulinks", "extension", "nulinks-extension"],
-    title: "NULinks",
+    keywords: ["parkour-president", "aoun-runs"],
+    title: "Parkour President",
+    target: "https://www.youtube.com/watch?v=Q2Q3V2Dky6Q",
+    description: "Joseph E. Aoun almost missing his 2019 Commencement Speech",
+    usageFrequency: "ONCE"
+  },
+  {
+    keywords: ["nulinks-extension"],
+    title: "NULinks Chrome Extension",
     target:
       "https://chrome.google.com/webstore/detail/nulinks/gfbdcgkehhkgfehdilpmldkeihiojjak",
-    description: "The NULinks chrome extension. Unofficial and run by students",
+    description: "The NULinks Chrome Extension. Unofficial and run by students",
     usageFrequency: "ONCE"
+  },
+  {
+    keywords: ["nulinks", "nulinks-site"],
+    title: "NULinks Site",
+    target: "https://nulinks.kj800x.com",
+    description: "The NULinks website. Unofficial and run by students",
+    usageFrequency: "ONCE A SEMESTER"
   },
   {
     keywords: [

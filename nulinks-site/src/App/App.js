@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState, useEffect } from "react";
 import "./App.css";
 import Title from "../Title/Title";
 import Search from "../Search/Search";
@@ -7,85 +7,69 @@ import NULINKS_DATA from "nulinks-common/src/data";
 import { search } from "nulinks-common/src/search";
 import Footer from "../Footer/Footer";
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      searchValue: "",
-      selectedResult: null,
-      searchResults: search(NULINKS_DATA)("")
-    };
-    this.handleSearchChange = this.handleSearchChange.bind(this);
-    this.handleSelectedResultChange = this.handleSelectedResultChange.bind(
-      this
-    );
-    this.handleGo = this.handleGo.bind(this);
-  }
+const App = () => {
+  const [searchValue, setSearchValue] = useState("");
+  const [selectedResult, setSelectedResult] = useState(null);
+  const [searchResults, setSearchResults] = useState(search(NULINKS_DATA)(""));
 
-  componentDidMount() {
-    const url = new URL(window.location);
-    if (url.searchParams.get("q")) {
-      this.handleSearchChange(url.searchParams.get("q"), () => {
-        if (url.searchParams.get("go") !== null) {
-          this.handleGo();
-        }
-      });
+  const handleSearchChange = value => {
+    setSearchValue(value);
+    setSearchResults(search(NULINKS_DATA)(value));
+    setSelectedResult(0);
+  };
+
+  const handleGo = () => {
+    if (null !== selectedResult) {
+      window.location = searchResults[selectedResult].value.target;
     }
-  }
+  };
 
-  handleSearchChange(value, callback) {
-    this.setState(
-      {
-        searchValue: value,
-        selectedResult: value === "" ? null : 0,
-        searchResults: search(NULINKS_DATA)(value)
-      },
-      callback
-    );
-  }
-
-  handleSelectedResultChange(delta) {
-    if (this.state.selectedResult === null) {
-      this.setState({ selectedResult: 0 });
+  const handleSelectedResultChange = delta => {
+    if (selectedResult === null) {
+      setSelectedResult(0);
       return;
     }
-    const newValue = this.state.selectedResult + delta;
-    if (newValue >= 0 && newValue < this.state.searchResults.length) {
-      this.setState({ selectedResult: newValue });
+    const newValue = selectedResult + delta;
+    if (newValue >= 0 && newValue < searchResults.length) {
+      setSelectedResult(newValue);
     }
-  }
+  };
 
-  handleGo() {
-    if (null !== this.state.selectedResult) {
-      window.location = this.state.searchResults[
-        this.state.selectedResult
-      ].value.target;
+  useEffect(() => {
+    const url = new URL(window.location);
+    if (url.searchParams.get("q")) {
+      handleSearchChange(url.searchParams.get("q"));
     }
-  }
+  }, []);
 
-  render() {
-    return (
-      <div className="mainWrapper">
-        <section className="page">
-          <Title />
-          <div className="contents">
-            <Search
-              value={this.state.searchValue}
-              onChange={this.handleSearchChange}
-              onSelectedResultChange={this.handleSelectedResultChange}
-              onGo={this.handleGo}
-            />
-            <Results
-              results={this.state.searchResults}
-              selectedResult={this.state.selectedResult}
-              searchQuery={this.state.searchValue}
-            />
-          </div>
-          <Footer />
-        </section>
-      </div>
-    );
-  }
-}
+  useEffect(() => {
+    const url = new URL(window.location);
+    if (url.searchParams.get("go") !== null && selectedResult !== null) {
+      handleGo();
+    }
+  }, [selectedResult]);
+
+  return (
+    <div className="mainWrapper">
+      <section className="page">
+        <Title />
+        <div className="contents">
+          <Search
+            value={searchValue}
+            onChange={handleSearchChange}
+            onSelectedResultChange={handleSelectedResultChange}
+            onGo={handleGo}
+          />
+          <Results
+            results={searchResults}
+            selectedResult={selectedResult}
+            searchQuery={searchValue}
+          />
+        </div>
+        <Footer />
+      </section>
+    </div>
+  );
+};
 
 export default App;

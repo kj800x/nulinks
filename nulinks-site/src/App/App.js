@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./App.css";
 import Title from "../Title/Title";
 import Search from "../Search/Search";
@@ -18,11 +18,11 @@ const App = () => {
     setSelectedResult(0);
   };
 
-  const handleGo = () => {
+  const handleGo = useCallback(() => {
     if (null !== selectedResult) {
       window.location = searchResults[selectedResult].value.target;
     }
-  };
+  }, [selectedResult, searchResults]);
 
   const handleSelectedResultChange = delta => {
     if (selectedResult === null) {
@@ -47,7 +47,7 @@ const App = () => {
     if (url.searchParams.get("go") !== null && selectedResult !== null) {
       handleGo();
     }
-  }, [selectedResult]);
+  }, [selectedResult, handleGo]);
 
   return (
     <div className="mainWrapper">

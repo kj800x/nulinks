@@ -2,6 +2,13 @@
   background: rgba(0, 136, 204, 0.8) !important;
 }
 
+.result.selected .resultContents:hover {
+  background: rgba(0, 117, 175, 0.8) !important;
+}
+.result.selected .resultContents:active {
+  background: rgba(0, 58, 88, 0.8) !important;
+}
+
 .result.selected,
 .result.selected .resultTitle,
 .result.selected .resultGoLink,

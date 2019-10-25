@@ -7,10 +7,15 @@ import NULINKS_DATA from "nulinks-common/src/data";
 import { search } from "nulinks-common/src/search";
 import Footer from "../Footer/Footer";
 
+const url = new URL(window.location);
+const INITIAL_SEARCH_VALUE = url.searchParams.get("q") || "";
+
 const App = () => {
-  const [searchValue, setSearchValue] = useState("");
+  const [searchValue, setSearchValue] = useState(INITIAL_SEARCH_VALUE);
   const [selectedResult, setSelectedResult] = useState(null);
-  const [searchResults, setSearchResults] = useState(search(NULINKS_DATA)(""));
+  const [searchResults, setSearchResults] = useState(
+    search(NULINKS_DATA)(INITIAL_SEARCH_VALUE)
+  );
 
   const handleSearchChange = value => {
     setSearchValue(value);
@@ -36,18 +41,16 @@ const App = () => {
   };
 
   useEffect(() => {
-    const url = new URL(window.location);
-    if (url.searchParams.get("q")) {
-      handleSearchChange(url.searchParams.get("q"));
+    if (
+      url.searchParams.get("go") !== null &&
+      INITIAL_SEARCH_VALUE &&
+      search(NULINKS_DATA)(INITIAL_SEARCH_VALUE).length > 0
+    ) {
+      window.location = search(NULINKS_DATA)(
+        INITIAL_SEARCH_VALUE
+      )[0].value.target;
     }
   }, []);
-
-  useEffect(() => {
-    const url = new URL(window.location);
-    if (url.searchParams.get("go") !== null && selectedResult !== null) {
-      handleGo();
-    }
-  }, [selectedResult, handleGo]);
 
   return (
     <div className="mainWrapper">

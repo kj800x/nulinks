@@ -6,6 +6,6 @@
   <Image height="16" width="16" type="image/png">http://nulinks.kj800x.com/icons/16.png</Image>
   <Image height="64" width="64" type="image/png">http://nulinks.kj800x.com/icons/64.png</Image>
   <Url type="application/opensearchdescription+xml" rel="self" template="http://nulinks.kj800x.com/opensearch.xml" />
-  <Url type="text/html" template="http://nulinks.kj800x.com/?q={searchTerms}"/>
+  <Url type="text/html" template="http://nulinks.kj800x.com/?go&q={searchTerms}"/>
   <moz:SearchForm>http://nulinks.kj800x.com</moz:SearchForm>
 </OpenSearchDescription>

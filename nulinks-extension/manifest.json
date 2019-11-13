@@ -9,8 +9,7 @@
     "64": "icons/64.png"
   },
   "permissions": [
-    "tabs",
-    "https://s3.amazonaws.com/nulinks-lamda-out.kj800x.com/*"
+    "tabs"
   ],
   "background": {
     "page": "background/background.html",

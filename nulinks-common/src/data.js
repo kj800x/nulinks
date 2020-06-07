@@ -885,7 +885,14 @@ const NULINKS_DATA = [
     target: "https://wl11gp.neu.edu/udcprod8/bzkspoa.P_SHOW_POA",
     description: "View your Pattern of Attendance",
     usageFrequency: "ONCE A YEAR"
-  }
+  },
+  {
+    keywords: ["perkins", "loan", "repayment"],
+    title: "Northeastern Perkins Loan Repayment",
+    target: "https://cwaprod.neu.edu:8443/cwaprod/login.aspx",
+    description: "Repay your Northeastern-serviced Federal Perkins Loans after graudation",
+    usageFrequency: "A FEW TIMES A SEMESTER"
+  },
 ];
 
 export default NULINKS_DATA;

@@ -1,6 +1,7 @@
 .food-truck-table {
   text-align: center;
   border-collapse: collapse;
+  max-width: 100%;
 }
 
 .food-truck-table th {

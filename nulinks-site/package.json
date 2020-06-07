@@ -16,9 +16,9 @@
   },
   "dependencies": {
     "nulinks-common": "file:../nulinks-common",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-hooks-async": "^3.7.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-hooks-async": "^3.10.1",
     "react-scripts": "^3.4.1"
   },
   "homepage": ".",

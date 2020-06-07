@@ -890,9 +890,10 @@ const NULINKS_DATA = [
     keywords: ["perkins", "loan", "repayment"],
     title: "Northeastern Perkins Loan Repayment",
     target: "https://cwaprod.neu.edu:8443/cwaprod/login.aspx",
-    description: "Repay your Northeastern-serviced Federal Perkins Loans after graudation",
+    description:
+      "Repay your Northeastern-serviced Federal Perkins Loans after graduation",
     usageFrequency: "A FEW TIMES A SEMESTER"
-  },
+  }
 ];
 
 export default NULINKS_DATA;

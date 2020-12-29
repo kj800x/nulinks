@@ -900,6 +900,14 @@ const NULINKS_DATA = [
     description:
       "Repay your Northeastern-serviced Federal Perkins Loans after graduation",
     usageFrequency: "A FEW TIMES A SEMESTER"
+  },
+  {
+    keywords: ["student-hub", "hub"],
+    title: "Student Hub",
+    target: "https://northeastern.sharepoint.com/sites/studenthub",
+    description:
+      "Visit the Student Hub, home to the dynamic scheduling tool, and a highly personalized platform with key class information, applications, resources, and community engagement",
+    usageFrequency: "DAILY"
   }
 ];
 

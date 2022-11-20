@@ -8,10 +8,10 @@ jobs:
     steps:
     - name: Clone Repo
       uses: actions/checkout@master
-    - name: Setup Node.js 12
+    - name: Setup Node.js 18.12.1
       uses: actions/setup-node@v1
       with:
-        node-version: '12.x'
+        node-version: '18.12.1'
     - name: NPM Install
       run: |
         npm install
@@ -28,10 +28,10 @@ jobs:
     steps:
     - name: Clone Repo
       uses: actions/checkout@master
-    - name: Setup Node.js 12
+    - name: Setup Node.js 18.12.1
       uses: actions/setup-node@v1
       with:
-        node-version: '12.x'
+        node-version: '18.12.1'
     - name: NPM Install
       run: |
         npm install
@@ -49,10 +49,10 @@ jobs:
     steps:
     - name: Clone Repo
       uses: actions/checkout@master
-    - name: Setup Node.js 12
+    - name: Setup Node.js 18.12.1
       uses: actions/setup-node@v1
       with:
-        node-version: '12.x'
+        node-version: '18.12.1'
     - name: NPM Install
       run: |
         npm install

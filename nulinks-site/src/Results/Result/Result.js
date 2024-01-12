@@ -11,7 +11,7 @@ export default class Result extends Component {
       ReactDom.findDOMNode(this).scrollIntoView({
         behavior: "instant",
         block: "nearest",
-        inline: "nearest"
+        inline: "nearest",
       });
     }
   }

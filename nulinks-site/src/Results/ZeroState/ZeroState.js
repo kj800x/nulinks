@@ -6,13 +6,13 @@ import "./ZeroState.css";
 
 import searching from "./searching.svg";
 
-const makeTitle = searchQuery => {
+const makeTitle = (searchQuery) => {
   return encodeURIComponent(`Link Suggestion: ${searchQuery}`);
 };
 
-const makeBody = searchQuery => {
+const makeBody = (searchQuery) => {
   return encodeURIComponent(
-    `Suggested Keyword: ${searchQuery}\nSuggested Destination Page: TODO - FILL ME IN\n`
+    `Suggested Keyword: ${searchQuery}\nSuggested Destination Page: TODO - FILL ME IN\n`,
   );
 };
 
@@ -25,7 +25,7 @@ export default ({ searchQuery }) => (
       <A
         className="button"
         href={`https://github.com/kj800x/nulinks/issues/new?title=${makeTitle(
-          searchQuery
+          searchQuery,
         )}&body=${makeBody(searchQuery)}`}
       >
         Make a Suggestion

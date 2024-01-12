@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Search.css";
 
-const handleKeyDown = (onSelectedResultChange, onGo) => event => {
+const handleKeyDown = (onSelectedResultChange, onGo) => (event) => {
   if (event.key === "Enter") {
     onGo();
   }

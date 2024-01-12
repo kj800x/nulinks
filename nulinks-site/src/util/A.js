@@ -5,7 +5,7 @@ const isPWA = () => window.matchMedia("(display-mode: standalone)").matches;
 // https://stackoverflow.com/a/24600597
 const isMobile = /Mobi/.test(navigator.userAgent);
 
-export const A = props => {
+export const A = (props) => {
   const { mobileHref, href, ...passedProps } = props;
 
   return (

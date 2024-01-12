@@ -4,7 +4,7 @@ import ZeroState from "./ZeroState/ZeroState";
 
 import "./Results.css";
 
-const renderResult = selectedResult => (result, index) => (
+const renderResult = (selectedResult) => (result, index) => (
   <Result
     result={result}
     selected={selectedResult === index}

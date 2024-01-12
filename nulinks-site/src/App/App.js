@@ -14,10 +14,10 @@ const App = () => {
   const [searchValue, setSearchValue] = useState(INITIAL_SEARCH_VALUE);
   const [selectedResult, setSelectedResult] = useState(null);
   const [searchResults, setSearchResults] = useState(
-    search(NULINKS_DATA)(INITIAL_SEARCH_VALUE)
+    search(NULINKS_DATA)(INITIAL_SEARCH_VALUE),
   );
 
-  const handleSearchChange = value => {
+  const handleSearchChange = (value) => {
     setSearchValue(value);
     setSearchResults(search(NULINKS_DATA)(value));
     setSelectedResult(0);
@@ -29,7 +29,7 @@ const App = () => {
     }
   }, [selectedResult, searchResults]);
 
-  const handleSelectedResultChange = delta => {
+  const handleSelectedResultChange = (delta) => {
     if (selectedResult === null) {
       setSelectedResult(0);
       return;
@@ -46,9 +46,8 @@ const App = () => {
       INITIAL_SEARCH_VALUE &&
       search(NULINKS_DATA)(INITIAL_SEARCH_VALUE).length > 0
     ) {
-      window.location = search(NULINKS_DATA)(
-        INITIAL_SEARCH_VALUE
-      )[0].value.target;
+      window.location =
+        search(NULINKS_DATA)(INITIAL_SEARCH_VALUE)[0].value.target;
     }
   }, []);
 

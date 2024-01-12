@@ -27,12 +27,12 @@ const IMPORTANT_SEARCH_TERMS = [
   "bill",
   "bills",
   "work",
-  "work-re"
+  "work-re",
 ];
 
 const TEST_CASES = [...ALPHABET, ...IMPORTANT_SEARCH_TERMS];
 
-const itsFirstResultMatchesSnapshot = searchTerm => {
+const itsFirstResultMatchesSnapshot = (searchTerm) => {
   it(`matches snapshot for term ${searchTerm}`, () => {
     const results = search(NULINKS_DATA)(searchTerm);
     const value = results.length > 0 ? results[0].value.title : null;

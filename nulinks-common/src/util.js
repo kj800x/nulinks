@@ -1,1 +1,1 @@
-export const toLower = string => string.toLowerCase();
+export const toLower = (string) => string.toLowerCase();

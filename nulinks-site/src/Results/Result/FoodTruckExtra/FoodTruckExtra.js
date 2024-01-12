@@ -11,11 +11,11 @@ const DAYS_OF_WEEK = [
   "wednesday",
   "thursday",
   "friday",
-  "saturday"
+  "saturday",
 ];
 const MEALS = ["lunch", "dinner"];
 
-const titleCase = str => str.charAt(0).toUpperCase() + str.slice(1);
+const titleCase = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 const currentMeal = () => {
   const nowHour = new Date().getHours();
   if (nowHour < 15) {
@@ -26,15 +26,15 @@ const currentMeal = () => {
 };
 const currentDateOfWeek = () => DAYS_OF_WEEK[new Date().getDay()];
 
-const shortStringifyTrucks = trucks =>
-  trucks.map(truck => truck.name).join(", ");
+const shortStringifyTrucks = (trucks) =>
+  trucks.map((truck) => truck.name).join(", ");
 
-const stringifyTrucks = trucks =>
-  trucks.map(truck => truck.name + " Food Truck").join(", ");
+const stringifyTrucks = (trucks) =>
+  trucks.map((truck) => truck.name + " Food Truck").join(", ");
 
 function FoodTrucksCurrent({ truckData }) {
   const current = stringifyTrucks(
-    truckData[currentMeal()][currentDateOfWeek()]
+    truckData[currentMeal()][currentDateOfWeek()],
   );
 
   if (current) {
@@ -50,16 +50,16 @@ function FoodTrucksTable({ truckData }) {
       <thead>
         <tr>
           <td />
-          {DAYS_OF_WEEK.map(dow => (
+          {DAYS_OF_WEEK.map((dow) => (
             <th key={dow}>{titleCase(dow)}</th>
           ))}
         </tr>
       </thead>
       <tbody>
-        {MEALS.map(meal => (
+        {MEALS.map((meal) => (
           <tr key={meal}>
             <th>{titleCase(meal)}</th>
-            {DAYS_OF_WEEK.map(dow => (
+            {DAYS_OF_WEEK.map((dow) => (
               <td key={dow}>{shortStringifyTrucks(truckData[meal][dow])}</td>
             ))}
           </tr>

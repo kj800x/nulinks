@@ -17,6 +17,6 @@
   "author": "Kevin Johnson",
   "license": "MIT",
   "devDependencies": {
-    "prettier": "1.18.2"
+    "prettier": "3.2.0"
   }
 }

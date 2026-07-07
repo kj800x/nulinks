@@ -25,7 +25,7 @@ chrome.omnibox.onInputEntered.addListener((text) => {
     setTimeout(
       () =>
         chrome.tabs.update(undefined, {
-          url: chrome.extension.getURL(`pages/index.html${query}`),
+          url: chrome.runtime.getURL(`pages/index.html${query}`),
         }),
       10,
     );
@@ -35,6 +35,6 @@ chrome.omnibox.onInputEntered.addListener((text) => {
   chrome.tabs.update(undefined, { url: match.target });
 });
 
-chrome.browserAction.onClicked.addListener(function (tab) {
-  chrome.tabs.create({ url: chrome.extension.getURL("pages/index.html") });
+chrome.action.onClicked.addListener(function (tab) {
+  chrome.tabs.create({ url: chrome.runtime.getURL("pages/index.html") });
 });
